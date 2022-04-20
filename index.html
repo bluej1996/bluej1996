@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UACompatible" content="IE=edge">
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.png">
     <link rel="apple-touch-icon-precomposed" href="images/mobile_web_icon.png">
     <meta name="viewport"
         content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
@@ -17,7 +17,6 @@
     <script src="js/respond.min.js"></script>
     <link rel="stylesheet" href="css/reset.css">
 
-    <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
 
     <link rel="stylesheet" href="js/swiper/swiper.min.css">
@@ -32,6 +31,12 @@
 
     <!-- Progressbar 관련 -->
     <script type="text/javascript" src="js/progressbar/progressbar.js"></script>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -48,6 +53,7 @@
                 <div class="menu">
                     <ul class="mainmenu">
                         <li><a href="#aboutme">ABOUT ME</a></li>
+                        <li><a href="#skill">SKILL</a></li>
                         <li><a href="#portfoilo">PORTFOLIO</a></li>
                         <li><a href="#life">LIFE</a></li>
                         <li><a href="#contact">CONTACT</a></li>
@@ -59,13 +65,21 @@
             <section class="visual">
                 <div class="container">
                     <div class="visual-img"></div>
-                    <span>LEE JUNHONG</span>
+                    <div class="waviy">
+                        <span style="--i:1">L</span>
+                        <span style="--i:2">E</span>
+                        <span style="--i:3">E</span>
+                        <span style="--i:4"> </span>
+                        <span style="--i:5">J</span>
+                        <span style="--i:6">U</span>
+                        <span style="--i:7">N</span>
+                        <span style="--i:8">H</span>
+                        <span style="--i:9">O</span>
+                        <span style="--i:10">N</span>
+                        <span style="--i:11">G</span>
+                    </div>
                     <h1>Frontend</h1>
-                    <p>
-                        Most good programmers do programming not because they
-                        expect to get paid or get adulation by the
-                        public, but because it is fun to program
-                    </p>
+                    <div class="word"></div>
                 </div>
                 <div class="blank">
                     <i class="blue-line"></i>
@@ -84,8 +98,8 @@
                                 </li>
                             </ul>
                         </div>
-                        <span>PROFILE</span>
-                        <p>
+                        <span data-aos="fade-right">PROFILE</span>
+                        <p data-aos="fade-up" data-aos-delay="300">
                             이름 : 이준홍<br>
                             나이 : 27세<br>
                             학력 : 영남이공대학교 소프트웨어콘텐츠 학과 졸업<br>
@@ -104,8 +118,8 @@
                                 </li>
                             </ul>
                         </div>
-                        <span>MBTI / ISTJ</span>
-                        <p>
+                        <span data-aos="fade-left">MBTI / ISTJ</span>
+                        <p data-aos="fade-up" data-aos-delay="300">
                             ISTJ는 청렴결백한 논리주의자입니다. 저는 의지가 강하고 규율에<br>
                             잘 순응하는 사람이기에 조직안에서 맡겨진 일들을 책임감 있게<br>
                             완수 할 수 있습니다. 위기 상황에서도 무너지지 않고 합리적인<br>
@@ -115,8 +129,8 @@
                     </div>
                 </div>
             </section>
-            <section class="skill">
-                <h2 class="skill-title">Skill</h2>
+            <section class="skill" id="skill">
+                <h2 class="skill-title" data-aos="flip-left"data-aos-duration="1000">Skill</h2>
                 <div class="container">
                     <div class="item" data-aos="flip-left" data-aos-duration="1000"></div>
                     <div class="item" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="100"></div>
@@ -136,8 +150,8 @@
                         <div class="swiper-container sw-cc">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <img src="https://via.placeholder.com/300x400.png/88c3ab" alt="" class="sw-img">
-                                    <div class="cc-title">
+                                    <img src="images/도미노시안.png" alt="" class="sw-img">
+                                    <div class="cc-title form-label">
                                         <h3>Personal Clone coding</h3>
                                         <span>Dominos</span>
                                     </div>
@@ -146,7 +160,7 @@
                                     <a href="https://web.dominos.co.kr/main#" target="_blank" class="cc-link">Origin</a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="https://via.placeholder.com/300x400.png/88c3ab" alt="" class="sw-img">
+                                    <img src="images/stx시안.png" alt="" class="sw-img">
                                     <div class="cc-title">
                                         <h3>Study Clone coding</h3>
                                         <span>STXConst</span>
@@ -156,7 +170,7 @@
                                     <a href="http://www.stxconst.co.kr/" target="_blank" class="cc-link">Origin</a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="https://via.placeholder.com/300x400.png/88c3ab" alt="" class="sw-img">
+                                    <img src="images/풀무원녹즙시안.png" alt="" class="sw-img">
                                     <div class="cc-title">
                                         <h3>Study Clone coding</h3>
                                         <span>Greenjuice</span>
@@ -166,7 +180,7 @@
                                     <a href="https://greenjuice.pulmuone.com/" target="_blank" class="cc-link">Origin</a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="https://via.placeholder.com/300x400.png/88c3ab" alt="" class="sw-img">
+                                    <img src="images/한살림장보기 시안.png" alt="" class="sw-img">
                                     <div class="cc-title">
                                         <h3>Study Clone coding</h3>
                                         <span>Hansalim</span>
@@ -176,7 +190,7 @@
                                     <a href="https://shop.hansalim.or.kr" target="_blank" class="cc-link">Origin</a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="https://via.placeholder.com/300x400.png/88c3ab" alt="" class="sw-img">
+                                    <img src="images/생명보험협회_시안_1.png" alt="" class="sw-img">
                                     <div class="cc-title">
                                         <h3>Study Clone coding</h3>
                                         <span>Klia</span>
@@ -186,7 +200,7 @@
                                     <a href="https://www.klia.or.kr/" target="_blank" class="cc-link">Origin</a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="https://via.placeholder.com/300x400.png/88c3ab" alt="" class="sw-img">
+                                    <img src="images/부산대병원 시안.png" alt="" class="sw-img">
                                     <div class="cc-title">
                                         <h3>Study Clone coding</h3>
                                         <span>Pnuh</span>
@@ -196,7 +210,7 @@
                                     <a href="https://www.pnuh.or.kr/pnuh/main/main.do?rbsIdx=1" target="_blank" class="cc-link">Origin</a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="https://via.placeholder.com/300x400.png/88c3ab" alt="" class="sw-img">
+                                    <img src="images/산청군청 시안.png" alt="" class="sw-img">
                                     <div class="cc-title">
                                         <h3>Study Clone coding</h3>
                                         <span>Sancheong</span>
@@ -216,12 +230,42 @@
                 <div class="container">
                     <h2 class="life-title">Life</h2>
                     <ul class="life-img clearfix">
-                        <li><img src="https://via.placeholder.com/450x350.png/88c3ab" alt=""></li>
-                        <li><img src="https://via.placeholder.com/330x350.png/88c3ab" alt=""></li>
-                        <li><img src="https://via.placeholder.com/380x350.png/88c3ab" alt=""></li>
-                        <li><img src="https://via.placeholder.com/800x250.png/88c3ab" alt=""></li>
-                        <li><img src="https://via.placeholder.com/380x250.png/88c3ab" alt=""></li>
-                    
+                        <li class="img-box">
+                            <img src="images/life1.jpg" alt="">
+                            <div class="info">
+                                <h3>Mansion5 Cafe</h3>
+                            </div>
+                        </li>
+                        <li class="img-box">
+                            <img src="images/life2.jpg" alt="">
+                            <div class="info">
+                                <h3>Grand Canyon</h3>
+                            </div>
+                        </li>
+                        <li class="img-box">
+                            <img src="images/life3.jpg" alt="">
+                            <div class="info">
+                                <h3>Nara park</h3>
+                            </div>
+                        </li>
+                        <li class="img-box">
+                            <img src="images/life4.jpg" alt="">
+                            <div class="info">
+                                <h3>Sapporo</h3>
+                            </div>
+                        </li>
+                        <li class="img-box">
+                            <img src="images/life5.jpg" alt="">
+                            <div class="info">
+                                <h3>Sapporo Biei</h3>
+                            </div>
+                        </li>
+                        <li class="img-box">
+                            <img src="images/life6.jpg" alt="">
+                            <div class="info">
+                                <h3>Oxley Cafe</h3>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </section>
@@ -253,6 +297,7 @@
             <a href="#" class="footer-logo"></a>
             <ul class="footer-menu clearfix">
                 <li><a href="#aboutme">ABOUT ME</a></li>
+                <li><a href="#skill">SKILL</a></li>
                 <li><a href="#portfoilo">PORTFOLIO</a></li>
                 <li><a href="#life">LIFE</a></li>
                 <li><a href="#contact">CONTACT</a></li>

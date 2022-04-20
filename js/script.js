@@ -1,7 +1,7 @@
 $(document).ready(function () {
     AOS.init();
 
-    let menu_id = ['#aboutme', '#portfoilo', '#life', '#contact'];
+    let menu_id = ['#aboutme','#skill', '#portfoilo', '#life', '#contact'];
     let menu_pos = [];
     for (let i = 0; i < menu_id.length; i++) {
         menu_pos[i] = $(menu_id[i]).offset().top - 110;
@@ -88,7 +88,7 @@ $(document).ready(function () {
         }
     }, 
     { 
-        offset: '90%' 
+        offset: '50%' 
     });
     $('#mbti_s').waypoint(function(dir) {
         if(dir=="down") {
@@ -134,5 +134,53 @@ $(document).ready(function () {
             nextEl: '.sw-slide-next',
             prevEl: '.sw-slide-prev',
         },
+    });
+
+    var words = ['Hello, I am developer Lee Junhong. I still have a lot of shortcomings, but I am a developer who has a lot of will to learn and tries hard. We will work hard every day to show you how we grow :)'
+    ],
+    part,
+    i = 0,
+    offset = 0,
+    len = words.length,
+    forwards = true,
+    skip_count = 0,
+    skip_delay = 10000,
+    speed = 50;
+    var wordflick = function () {
+    setInterval(function () {
+        if (forwards) {
+        if (offset >= words[i].length) {
+            ++skip_count;
+            if (skip_count == skip_delay) {
+            forwards = false;
+            skip_count = 0;
+            }
+        }
+        }
+        else {
+        if (offset == 0) {
+            forwards = true;
+            i++;
+            offset = 0;
+            if (i >= len) {
+            i = 0;
+            }
+        }
+        }
+        part = words[i].substr(0, offset);
+        if (skip_count == 0) {
+        if (forwards) {
+            offset++;
+        }
+        else {
+            offset--;
+        }
+        }
+        $('.word').text(part);
+    },speed);
+    };
+
+    $(document).ready(function () {
+    wordflick();
     });
 });
