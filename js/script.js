@@ -1,7 +1,7 @@
 $(document).ready(function () {
     AOS.init();
 
-    let menu_id = ['#aboutme','#skill', '#portfoilo', '#life', '#contact'];
+    let menu_id = ['#aboutme', '#portfoilo', '#skill', '#life', '#contact'];
     let menu_pos = [];
     for (let i = 0; i < menu_id.length; i++) {
         menu_pos[i] = $(menu_id[i]).offset().top - 110;
@@ -88,7 +88,7 @@ $(document).ready(function () {
         }
     }, 
     { 
-        offset: '50%' 
+        offset: '90%' 
     });
     $('#mbti_s').waypoint(function(dir) {
         if(dir=="down") {
