@@ -6,6 +6,7 @@
     font-family: "League Spartan";
     src: url("LeagueSpartan-Bold.otf") format("truetype");
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -29,6 +30,34 @@ li {
 
 html {
     font-size: 10px;
+    
+}
+body{
+    overflow-x: hidden
+}
+
+html {
+    overflow: auto;
+}
+
+/* SCROLL */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* 스크롤바의 width */
+::-webkit-scrollbar-track {
+    background-color: #000;
+}
+
+/* 스크롤바의 전체 배경색 */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to top, #babcfe, #a688cd);
+}
+
+/* 스크롤바 색 */
+::-webkit-scrollbar-button {
+    display: none;
 }
 
 /* 공통요소 */
@@ -53,7 +82,18 @@ html {
     display: block;
     writing-mode: vertical-lr;
     letter-spacing: 5px;
-    opacity: 0.2;
+    opacity: 0.3;
+
+    background-image: linear-gradient(
+        -225deg,
+        #231557 0%,
+        #44107a 29%,
+        #ff00ff 67%,
+        #ff1361 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
 }
 .bgline-1{
     position: absolute;
@@ -62,7 +102,7 @@ html {
     display: block;
     width: 1px;
     height: 100%;
-    background-color: #888;
+    background-color: #44107a;
     opacity: 0.1;
 }
 .bgline-2{
@@ -72,7 +112,7 @@ html {
     display: block;
     width: 1px;
     height: 100%;
-    background-color: #888;
+    background-color: #44107a;
     opacity: 0.1;
 }
 .bgline-3{
@@ -82,7 +122,7 @@ html {
     display: block;
     width: 1px;
     height: 100%;
-    background-color: #888;
+    background-color: #44107a;
     opacity: 0.1;
 }
 .bgline-4{
@@ -92,7 +132,7 @@ html {
     display: block;
     width: 1px;
     height: 100%;
-    background-color: #888;
+    background-color: #44107a;
     opacity: 0.1;
 }
 .bgline-5{
@@ -102,7 +142,7 @@ html {
     display: block;
     width: 1px;
     height: 100%;
-    background-color: #888;
+    background-color: #44107a;
     opacity: 0.1;
 }
 .wrap {
@@ -130,7 +170,7 @@ body {
 .logo{
     position: absolute;
     left: 10px;
-    top: 0;
+    top: 10px;
     display: block;
     width: 130px;
     height: 130px;
@@ -158,6 +198,9 @@ body {
     font-weight: bold;
     letter-spacing: 4px;
 }
+.mainmenu li:hover a {
+    color: #a688cd;
+}
 .main{
     position: relative;
     display: block;
@@ -173,7 +216,6 @@ body {
 .visual .container{
     height: 100%;
 }
-
 .waviy {
     position: relative;
     -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
@@ -185,8 +227,8 @@ body {
     font-family: 'League Spartan', arial;
     padding-top: 330px;
     margin-bottom: 25px;
-    letter-spacing: 4px;
-    color: #5da8ef;
+    letter-spacing: -3px;
+    color: #a688cd;
     font-size: 10px;
     opacity: .3;
     animation: waviy 1.5s infinite;
@@ -207,7 +249,6 @@ body {
     font-family: 'League Spartan', arial;
     font-weight: bold;
     font-size: 62px;
-    margin-bottom: 15px;
 }
 .word{
     position: relative;
@@ -222,7 +263,7 @@ body {
 }
 .visual-img{
     position: absolute;
-    right: 0;
+    right: 0px;
     top: 5%;
     display: block;
     width: 1000px;
@@ -235,22 +276,22 @@ body {
     position: relative;
     display: block;
 }
-.blue-line{
+.line{
     position: absolute;
     left: 50%;
-    bottom: 0%;
+    bottom: 50px;
     transform: translateY(-50%);
     display: block;
     width: 2px;
     height: 100px;
-    background-color: #5da8ef;
+    background-color: #a688cd;
 }
 .aboutme{
     position: relative;
     display: block;
     height: 100vh;
 }
-.aboutme .container{
+.aboutme > .container{
     height: 100%;
     padding-top: 80px;
 }
@@ -261,75 +302,109 @@ body {
     height: 370px;
 }
 .mbti-1{
-    position: absolute;
-    left: 0;
-    top: 0;
+    position: relative;
     display: block;
     width: 620px;
     height: 370px;
+    justify-content: space-evenly;
     box-shadow: 0px 0px 30px rgb(200, 200, 200);
-    background-color: #fff;
-    border: 4px solid #000;
+    border: 4px solid transparent;
+    background-image: linear-gradient(#fff, #fff),
+    linear-gradient(to right, #babcfe, #a688cd, #c283d6);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
     border-radius: 50px 0 0 0;
+    background-color: #000;
 }
-.mbti-1 ul{
-    position: relative;
-    display: block;
-    overflow: hidden;
-}
-.mbti-1 li{
-    position: relative;
-    display: block;
-    float: left;
-}
-.mbti-1 li span{
+.mbti-1 span{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 5em;
 }
-#mbti_i{
-    margin: 85px 55px;
-    width: 180px;
-    height: 180px;
-}
-#mbti_s{
-    margin: 85px 55px;
-    width: 180px;
-    height: 180px;
-}
-.aboutme-top > span{
+.mbti_i{
     position: absolute;
-    left: 56%;
+    left: 50px;
+    top: 50px;
+    display: block;
+    width: 130px;
+    height: 130px;
+}
+.mbti_s{
+    position: absolute;
+    left: 280px;
+    top: 60px;
+    display: block;
+    width: 120px;
+    height: 120px;
+}
+.mbti_t{
+    position: absolute;
+    left: 150px;
+    top: 200px;
+    display: block;
+    width: 100px;
+    height: 100px;
+}
+.mbti_j{
+    position: absolute;
+    left: 390px;
+    top: 190px;
+    display: block;
+    width: 140px;
+    height: 140px;
+}
+.education{
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    width: 560px;
+    height: 215px;
+    justify-content: space-evenly;
+    box-shadow: 0px 0px 30px rgb(200, 200, 200);
+    border: 4px solid transparent;
+    background-image: linear-gradient(#fff, #fff),
+    linear-gradient(to right, #babcfe, #a688cd, #c283d6);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    border-radius: 0px 50px 0 0;
+    background-color: #000;
+}
+.education > span{
+    position: relative;
+    left: 30px;
     top: 30px;
     display: block;
 
     letter-spacing: 4px;
     font-family: 'League Spartan', arial;
     color: #444;
+    font-size: 20px;
 }
-.aboutme-top > span::before{
+.education > span::before{
     content: '';
     position: absolute;
-    left: -2px;
-    top: 150%;
+    left: 8px;
+    top: 35%;
     display: block;
-    width: 100%;
-    height: 1px;
-    background-color: #5da8ef;
+    width: 150px;
+    height: 17px;
+    background-color: #a688cda1;
+    z-index: -1;
 }
-.aboutme-top p{
+.education p{
     position: absolute;
-    left: 56%;
-    top: 60px;
+    left: 30px;
+    top: 80px;
     display: block;
 
-    font-size: 12px;
-    letter-spacing: 4px;
+    font-size: 14px;
+    letter-spacing: 1px;
     font-family: 'Noto Sans KR';
     line-height: 20px;
-    color: #616161;
+    color: #000;
 }
 .aboutme-bottom{
     position: relative;
@@ -346,175 +421,167 @@ body {
     width: 620px;
     height: 370px;
     box-shadow: 0px 0px 30px rgb(200, 200, 200);
-    background-color: #fff;
-    border: 4px solid #000;
-    border-radius: 0 0 50px 0;
-}
-#mbti_t{
-    margin: 85px 55px;
-    width: 180px;
-    height: 180px;
-}
-#mbti_j{
-    margin: 85px 55px;
-    width: 180px;
-    height: 180px;
-}
-.mbti-2 ul{
-    position: relative;
-    display: block;
-    overflow: hidden;
-}
-.mbti-2 li{
-    position: relative;
-    display: block;
-    float: left;
-}
-.mbti-2 li span{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 5em;
-}
-.aboutme-bottom > span{
-    position: absolute;
-    left: 4%;
-    top: 55%;
-    display: block;
-
-    letter-spacing: 4px;
-    font-family: 'League Spartan', arial;
-    color: #444;
-}
-.aboutme-bottom > span::before{
-    content: '';
-    position: absolute;
-    left: -2px;
-    top: 150%;
-    display: block;
-    width: 100%;
-    height: 1px;
-    background-color: #5da8ef;
-}
-.aboutme-bottom p{
-    position: absolute;
-    left: 4%;
-    top: 65%;
-    display: block;
-
-    font-size: 12px;
-    letter-spacing: 3px;
-    font-family: 'Noto Sans KR';
-    line-height: 20px;
-    color: #616161;
-}
-
-.skill{
-    position: relative;
-    display: block;
-    height: 100vh;
-    background-color: #f9f9f9;
-    padding: 100px 0;
+    border: 4px solid transparent;
+    background-image: linear-gradient(#fff, #fff),
+    linear-gradient(to right, #c283d6, #c986c4, #8d3581);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    border-radius: 50px 0 50px 0;
 }
 .skill-title{
-    position: relative;
+    position: absolute;
+    left: 30px;
+    top: 30px;
     display: block;
     font-family: 'League Spartan', arial;
     letter-spacing: 4px;
-    line-height: 100px;
-    font-size: 62px;
-    text-align: center;
-    margin-bottom: 100px;
-    opacity: .8;
+    line-height: 20px;
+    font-size: 20px;
+    color: #444;
 }
 .skill-title::after{
     content: '';
     position: absolute;
-    left: 50%;
-    bottom: 5px;
-    transform: translateX(-50%);
+    left: 8px;
+    top: 35%;
     display: block;
-    width: 150px;
-    height: 2px;
-    background-color: #5da8ef;
+    width: 70px;
+    height: 17px;
+    background-color: #a688cda1;
+    z-index: -1;
 }
-.skill .container{
+.mbti-2 .container{
     display: flex;
     flex-wrap: wrap;
     align-content: stretch;
+    width: 620px;
+    height: 250px;
+    margin-top: 90px;
 }
-.skill .container .item{
+.mbti-2 .container .item{
     flex: 1 1 25%;
-    margin-bottom: 100px;
 }
 .item:nth-child(1){
     position: relative;
     display: block;
-    width: 300px;
-    height: 200px;
+    width: 120px;
+    height: 80px;
     background: url('../images/skills_1.png') no-repeat center;
     background-size: contain;
 }
 .item:nth-child(2){
     position: relative;
     display: block;
-    width: 300px;
-    height: 200px;
+    width: 120px;
+    height: 80px;
     background: url('../images/skills_2.png') no-repeat center;
     background-size: contain;
 }
 .item:nth-child(3){
     position: relative;
     display: block;
-    width: 300px;
-    height: 200px;
+    width: 120px;
+    height: 80px;
     background: url('../images/skills_3.png') no-repeat center;
     background-size: contain;
 }
 .item:nth-child(4){
     position: relative;
     display: block;
-    width: 300px;
-    height: 200px;
+    width: 120px;
+    height: 80px;
     background: url('../images/skills_4.png') no-repeat center;
     background-size: contain;
 }
 .item:nth-child(5){
     position: relative;
     display: block;
-    width: 300px;
-    height: 200px;
+    width: 120px;
+    height: 80px;
     background: url('../images/skills_5.png') no-repeat center;
     background-size: contain;
-    margin-bottom: 0px;
 }
 .item:nth-child(6){
     position: relative;
     display: block;
-    width: 300px;
-    height: 200px;
+    width: 120px;
+    height: 80px;
     background: url('../images/skills_6.png') no-repeat center;
     background-size: contain;
-    margin-bottom: 0px;
 }
 .item:nth-child(7){
     position: relative;
     display: block;
-    width: 300px;
-    height: 200px;
+    width: 120px;
+    height: 80px;
     background: url('../images/skills_7.png') no-repeat center;
     background-size: contain;
-    margin-bottom: 0px;
 }
 .item:nth-child(8){
     position: relative;
     display: block;
-    width: 300px;
-    height: 200px;
+    width: 120px;
+    height: 80px;
     background: url('../images/skills_8.png') no-repeat center;
     background-size: contain;
-    margin-bottom: 0px;
+}
+.mbti-text{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 560px;
+    height: 215px;
+    justify-content: space-evenly;
+    box-shadow: 0px 0px 30px rgb(200, 200, 200);
+    border: 4px solid transparent;
+    background-image: linear-gradient(#fff, #fff),
+    linear-gradient(to right, #babcfe, #a688cd, #c283d6);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    border-radius: 0px 0px 0px 50px;
+    background-color: #000;
+}
+.mbti-text > span{
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    display: block;
+
+    letter-spacing: 4px;
+    font-family: 'League Spartan', arial;
+    color: #444;
+    font-size: 20px;
+}
+.mbti-text > span::before{
+    content: '';
+    position: absolute;
+    left: 8px;
+    top: 35%;
+    display: block;
+    width: 150px;
+    height: 17px;
+    background-color: #a688cda1;
+    z-index: -1;
+}
+.mbti-text p{
+    position: absolute;
+    left: 30px;
+    top: 80px;
+    display: block;
+
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-family: 'Noto Sans KR';
+    line-height: 20px;
+    color: #000;
+}
+.vue{
+    position: relative;
+    display: block;
+    height: 100vh;
+    background-color: #f9f9f9;
+    padding: 100px 0;
 }
 .clonecoding{
     position: relative;
@@ -530,7 +597,7 @@ body {
     font-family: 'League Spartan', arial;
     letter-spacing: 4px;
     line-height: 62px;
-    color: #5da8ef;
+    color: #a688cd;
     text-align: center;
 }
 .portfolio-title{
@@ -542,7 +609,7 @@ body {
     font-size: 62px;
     text-align: center;
     margin-bottom: 100px;
-    opacity: .8;
+    color: #000;
 }
 .cc-title{
     position: absolute;
@@ -590,7 +657,8 @@ body {
     float: left;
 }
 .cc-link:hover {
-    background-color: #5da8ef;
+    color: #fff;
+    background-color: #a688cd;
 }
 .sw-slide-prev{
     position: absolute;
@@ -639,7 +707,7 @@ body {
 .life{
     position: relative;
     display: block;
-    height: 100vh;
+    height: 110vh;
     padding: 50px 0;
     background-color: #f9f9f9;
 }
@@ -654,7 +722,7 @@ body {
     font-size: 62px;
     text-align: center;
     margin-bottom: 70px;
-    opacity: .8;
+    color: #000;
 }
 .life-img{
     position: relative;
@@ -750,7 +818,7 @@ body {
     font-size: 62px;
     text-align: right;
     margin-bottom: 20px;
-    opacity: .8;
+    color: #000;
 }
 .contact-img{
     position: relative;
@@ -845,6 +913,9 @@ body {
 .footer-menu li{
     float: left;
     margin: 0 30px;
+}
+.footer-menu li:hover a {
+    color: #a688cd;
 }
 .footer-menu li a{
     font-family: 'League Spartan', arial;

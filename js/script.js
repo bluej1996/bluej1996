@@ -1,15 +1,15 @@
 $(document).ready(function () {
     AOS.init();
 
-    let menu_id = ['#aboutme', '#portfoilo', '#skill', '#life', '#contact'];
+    let menu_id = ['#aboutme', '#portfoilo', '#life', '#contact'];
     let menu_pos = [];
     for (let i = 0; i < menu_id.length; i++) {
-        menu_pos[i] = $(menu_id[i]).offset().top - 110;
+        menu_pos[i] = $(menu_id[i]).offset().top;
     }
     $(window).resize(function(){
         for (let i = 0; i < menu_id.length; i++) {           
             let temp = menu_id[i];
-            menu_pos[i] = $(temp).offset().top - 110;
+            menu_pos[i] = $(temp).offset().top;
         }
     });
 
@@ -36,7 +36,7 @@ $(document).ready(function () {
         strokeWidth: 6,
         easing: 'easeInOut',
         duration: 1400,
-        color: '#4298b4',
+        color: '#babcfe',
         trailColor: '#eee',
         trailWidth: 1,
         svgStyle: null
@@ -48,7 +48,7 @@ $(document).ready(function () {
         strokeWidth: 6,
         easing: 'easeInOut',
         duration: 1400,
-        color: '#e4ae3a',
+        color: '#a688cd',
         trailColor: '#eee',
         trailWidth: 1,
         svgStyle: null
@@ -60,7 +60,7 @@ $(document).ready(function () {
         strokeWidth: 6,
         easing: 'easeInOut',
         duration: 1400,
-        color: '#33a474',
+        color: '#c283d6',
         trailColor: '#eee',
         trailWidth: 1,
         svgStyle: null
@@ -72,7 +72,7 @@ $(document).ready(function () {
         strokeWidth: 6,
         easing: 'easeInOut',
         duration: 1400,
-        color: '#88619a',
+        color: '#8d3581',
         trailColor: '#eee',
         trailWidth: 1,
         svgStyle: null
