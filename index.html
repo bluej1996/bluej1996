@@ -31,10 +31,6 @@
 
     <!-- Progressbar 관련 -->
     <script type="text/javascript" src="js/progressbar/progressbar.js"></script>
-
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -87,15 +83,15 @@
             <section class="aboutme" id="aboutme">
                 <div class="container">
                     <div class="aboutme-top">
-                        <div class="mbti-1">
+                        <div class="mbti-1" data-aos="fade-down-right" data-aos-duration="2000">
                             <div class="mbti_i" id="mbti_i"><span>I</span></div>
                             <div class="mbti_s" id="mbti_s"><span>S</span></div>
                             <div class="mbti_t" id="mbti_t"><span>T</span></div>
                             <div class="mbti_j" id="mbti_j"><span>J</span></div>
                         </div>
-                        <div class="education">
-                            <span data-aos="fade-left" data-aos-duration="1500">EDUCATION</span>
-                            <p data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500">
+                        <div class="education"data-aos="fade-down" data-aos-duration="2000">
+                            <span>EDUCATION</span>
+                            <p>
                                 2015.02 &nbsp;&nbsp;달성고등학교 졸업<br>
                                 2019.12 &nbsp;&nbsp;영남이공대학교 해카톤대회 입상<br>
                                 2020.01 &nbsp;&nbsp;일본 어학연수<br>
@@ -105,7 +101,7 @@
                         </div>
                     </div>
                     <div class="aboutme-bottom">
-                        <div class="mbti-2">
+                        <div class="skill"data-aos="fade-up-left" data-aos-duration="2000" data-aos-delay="500">
                             <h2 class="skill-title" data-aos="flip-left"data-aos-duration="2000">SKILL</h2>
                             <div class="container">
                                 <div class="item" id="html" data-aos="flip-left" data-aos-duration="2000" data-aos-delay="200"></div>
@@ -118,9 +114,9 @@
                                 <div class="item" data-aos="flip-left" data-aos-duration="2000" data-aos-delay="1600"></div>
                             </div>
                         </div>
-                        <div class="mbti-text">
-                            <span data-aos="fade-left" data-aos-duration="1500">MBTI / ISTJ</span>
-                            <p data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500">
+                        <div class="mbti-text"data-aos="fade-up" data-aos-duration="2000" data-aos-delay="500">
+                            <span>MBTI / ISTJ</span>
+                            <p>
                                 ISTJ는 청렴결백한 논리주의자입니다.<br>
                                 저는 의지가 강하고 규율에 잘 순응하는 사람입니다.<br> 조직안에서 맡겨진 일들을 책임감 있게 완수 할 수 있습니다.<br>
                                 위기 상황에서도 무너지지 않고 합리적인 결정을 내리는 능력이 있습니다.<br>
@@ -132,90 +128,110 @@
             </section>
             <section class="clonecoding" id="portfoilo">
                 <span>PORTFOLIO</span>
-                <h2 class="portfolio-title">CLONE CODING</h2>
-                <div class="clonecoding-list">
-                    <div class="container">
-                        <div class="swiper-container sw-cc">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="images/도미노시안.png" alt="" class="sw-img">
-                                    <div class="cc-title form-label">
-                                        <h3>Personal Clone coding</h3>
-                                        <span>Dominos</span>
+                <h2 class="clonecoding-title">CLONE CODING</h2>
+                <div class="container">
+                    <div class="cc-left">
+                        <div class="cc-img-box">
+                            <div class="cc-img"></div>
+                        </div>
+                    </div>
+                    <div class="cc-right">
+                        <div class="cc-right-top">
+                            <div class="cc-text-box cc-text-box-active">
+                                <span>Project</span>
+                                <h3>스터디 클론 코딩</h3>
+                                <span>Brand</span>
+                                <h3>STX 건설</h3>
+                                <span>Date</span>
+                                <h3>2022.2</h3>
+                                <a href="https://bluej1996.github.io/dominos/" target="_blank" class="cc-link">Work</a>
+                                <a href="https://github.com/bluej1996/dominos" target="_blank" class="cc-link">GitHub</a>
+                                <a href="https://web.dominos.co.kr/main#" target="_blank" class="cc-link">Origin</a>
+                            </div>
+                            <!-- <div class="cc-text-box">
+                                <span>Project : 개인 클론 코딩</span>
+                                <h2>Brand : 도미노피자</h2>
+                                <p>Date : 2022.4</p>
+                                <a href="https://bluej1996.github.io/stxconst/" target="_blank" class="cc-link">Work</a>
+                                <a href="https://github.com/bluej1996/stxconst" target="_blank" class="cc-link">GitHub</a>
+                                <a href="http://www.stxconst.co.kr/" target="_blank" class="cc-link">Origin</a>
+                            </div> -->
+                            <!-- <div class="cc-text-box">
+                                <span>Project : 스터디 클론 코딩</span>
+                                <h2>Brand : 풀무원녹즙</h2>
+                                <p>Date : 2022.4</p>
+                                <a href="https://bluej1996.github.io/greenjuice/" target="_blank" class="cc-link">Work</a>
+                                <a href="https://github.com/bluej1996/greenjuice" target="_blank" class="cc-link">GitHub</a>
+                                <a href="https://greenjuice.pulmuone.com/" target="_blank" class="cc-link">Origin</a>
+                            </div> -->
+                            <!-- <div class="cc-text-box">
+                                <span>Project : 스터디 클론 코딩</span>
+                                <h2>Brand : 한살림장보기</h2>
+                                <p>Date : 2022.4</p>
+                                <a href="https://bluej1996.github.io/hansalim/" target="_blank" class="cc-link">Work</a>
+                                <a href="https://github.com/bluej1996/hansalim" target="_blank" class="cc-link">GitHub</a>
+                                <a href="https://shop.hansalim.or.kr" target="_blank" class="cc-link">Origin</a>
+                            </div> -->
+                            <!-- <div class="cc-text-box">
+                                <span>Project : 스터디 클론 코딩</span>
+                                <h2>Brand : 생명보험협회</h2>
+                                <p>Date : 2022.4</p>
+                                <a href="https://bluej1996.github.io/klia/" target="_blank" class="cc-link">Work</a>
+                                <a href="https://github.com/bluej1996/klia" target="_blank" class="cc-link">GitHub</a>
+                                <a href="https://www.klia.or.kr/" target="_blank" class="cc-link">Origin</a>
+                            </div> -->
+                            <!-- <div class="cc-text-box">
+                                <span>Project : 스터디 클론 코딩</span>
+                                <h2>Brand : 부산대병원</h2>
+                                <p>Date : 2022.4</p>
+                                <a href="https://bluej1996.github.io/pnuh/" target="_blank" class="cc-link">Work</a>
+                                <a href="https://github.com/bluej1996/pnuh" target="_blank" class="cc-link">GitHub</a>
+                                <a href="https://www.pnuh.or.kr/pnuh/main/main.do?rbsIdx=1" target="_blank" class="cc-link">Origin</a>
+                            </div> -->
+                            <!-- <div class="cc-text-box">
+                                <span>Project : 스터디 클론 코딩</span>
+                                <h2>Brand : 산청군청</h2>
+                                <p>Date : 2022.4</p>
+                                <a href="https://bluej1996.github.io/sancheong/" target="_blank" class="cc-link">Work</a>
+                                <a href="https://github.com/bluej1996/sancheong" target="_blank" class="cc-link">GitHub</a>
+                                <a href="https://www.sancheong.go.kr/www/index.do" target="_blank" class="cc-link">Origin</a>
+                            </div> -->
+                        </div>
+                        <div class="cc-swiper">
+                            <div class="swiper-container sw-cc">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="images/도미노시안.png" alt="" class="sw-img">
                                     </div>
-                                    <a href="https://bluej1996.github.io/dominos/" target="_blank" class="cc-link">Work</a>
-                                    <a href="https://github.com/bluej1996/dominos" target="_blank" class="cc-link">GitHub</a>
-                                    <a href="https://web.dominos.co.kr/main#" target="_blank" class="cc-link">Origin</a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="images/imstx.png" alt="" class="sw-img">
-                                    <div class="cc-title">
-                                        <h3>Study Clone coding</h3>
-                                        <span>STXConst</span>
+                                    <div class="swiper-slide">
+                                        <img src="images/STX.png" alt="" class="sw-img">
                                     </div>
-                                    <a href="https://bluej1996.github.io/stxconst/" target="_blank" class="cc-link">Work</a>
-                                    <a href="https://github.com/bluej1996/stxconst" target="_blank" class="cc-link">GitHub</a>
-                                    <a href="http://www.stxconst.co.kr/" target="_blank" class="cc-link">Origin</a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="images/풀무원녹즙시안.png" alt="" class="sw-img">
-                                    <div class="cc-title">
-                                        <h3>Study Clone coding</h3>
-                                        <span>Greenjuice</span>
+                                    <div class="swiper-slide">
+                                        <img src="images/풀무원녹즙시안.png" alt="" class="sw-img">
                                     </div>
-                                    <a href="https://bluej1996.github.io/greenjuice/" target="_blank" class="cc-link">Work</a>
-                                    <a href="https://github.com/bluej1996/greenjuice" target="_blank" class="cc-link">GitHub</a>
-                                    <a href="https://greenjuice.pulmuone.com/" target="_blank" class="cc-link">Origin</a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="images/한살림장보기 시안.png" alt="" class="sw-img">
-                                    <div class="cc-title">
-                                        <h3>Study Clone coding</h3>
-                                        <span>Hansalim</span>
+                                    <div class="swiper-slide">
+                                        <img src="images/한살림장보기 시안.png" alt="" class="sw-img">
                                     </div>
-                                    <a href="https://bluej1996.github.io/hansalim/" target="_blank" class="cc-link">Work</a>
-                                    <a href="https://github.com/bluej1996/hansalim" target="_blank" class="cc-link">GitHub</a>
-                                    <a href="https://shop.hansalim.or.kr" target="_blank" class="cc-link">Origin</a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="images/생명보험협회_시안_1.png" alt="" class="sw-img">
-                                    <div class="cc-title">
-                                        <h3>Study Clone coding</h3>
-                                        <span>Klia</span>
+                                    <div class="swiper-slide">
+                                        <img src="images/생명보험협회_시안_1.png" alt="" class="sw-img">
                                     </div>
-                                    <a href="https://bluej1996.github.io/klia/" target="_blank" class="cc-link">Work</a>
-                                    <a href="https://github.com/bluej1996/klia" target="_blank" class="cc-link">GitHub</a>
-                                    <a href="https://www.klia.or.kr/" target="_blank" class="cc-link">Origin</a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="images/부산대병원 시안.png" alt="" class="sw-img">
-                                    <div class="cc-title">
-                                        <h3>Study Clone coding</h3>
-                                        <span>Pnuh</span>
+                                    <div class="swiper-slide">
+                                        <img src="images/부산대병원 시안.png" alt="" class="sw-img">
                                     </div>
-                                    <a href="https://bluej1996.github.io/pnuh/" target="_blank" class="cc-link">Work</a>
-                                    <a href="https://github.com/bluej1996/pnuh" target="_blank" class="cc-link">GitHub</a>
-                                    <a href="https://www.pnuh.or.kr/pnuh/main/main.do?rbsIdx=1" target="_blank" class="cc-link">Origin</a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="images/산청군청 시안.png" alt="" class="sw-img">
-                                    <div class="cc-title">
-                                        <h3>Study Clone coding</h3>
-                                        <span>Sancheong</span>
+                                    <div class="swiper-slide">
+                                        <img src="images/sancheong.png" alt="" class="sw-img">
                                     </div>
-                                    <a href="https://bluej1996.github.io/sancheong/" target="_blank" class="cc-link">Work</a>
-                                    <a href="https://github.com/bluej1996/sancheong" target="_blank" class="cc-link">GitHub</a>
-                                    <a href="https://www.sancheong.go.kr/www/index.do" target="_blank" class="cc-link">Origin</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <button class="sw-slide-prev"></button>
-                    <button class="sw-slide-next"></button>
                 </div>
+                <!-- <button class="sw-slide-prev"></button>
+                <button class="sw-slide-next"></button> -->
             </section>
             <section class="vue">
-                
+                <span>PORTFOLIO</span>
+                <h2 class="vue-title">VUE</h2>
             </section>
             <section class="life" id="life">
                 <div class="container">

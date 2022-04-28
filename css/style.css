@@ -72,7 +72,7 @@ html {
 .container {
     position: relative;
     display: block;
-    width: 1200px;
+    width: 1300px;
     margin: 0 auto;
 }
 .bg-right{
@@ -164,6 +164,7 @@ body {
     display: block;
     width: 100%;
     height: 130px;
+    z-index: 999;
 }
 .header .container{}
 
@@ -183,7 +184,7 @@ body {
 }
 .mainmenu{
     position: absolute;
-    right: 0;
+    right: 50px;
     top: 0;
     display: block;
 }
@@ -205,13 +206,10 @@ body {
     position: relative;
     display: block;
 }
-.bg-img {
-    
-}
 .visual{
     position: relative;
     display: block;
-    height: 100vh;
+    height: 930px;
 }
 .visual .container{
     height: 100%;
@@ -248,7 +246,7 @@ body {
     display: block;
     font-family: 'League Spartan', arial;
     font-weight: bold;
-    font-size: 62px;
+    font-size: 82px;
 }
 .word{
     position: relative;
@@ -263,7 +261,7 @@ body {
 }
 .visual-img{
     position: absolute;
-    right: 0px;
+    right: 50px;
     top: 5%;
     display: block;
     width: 1000px;
@@ -289,7 +287,7 @@ body {
 .aboutme{
     position: relative;
     display: block;
-    height: 100vh;
+    height: 850px;
 }
 .aboutme > .container{
     height: 100%;
@@ -304,7 +302,7 @@ body {
 .mbti-1{
     position: relative;
     display: block;
-    width: 620px;
+    width: 670px;
     height: 370px;
     justify-content: space-evenly;
     box-shadow: 0px 0px 30px rgb(200, 200, 200);
@@ -325,42 +323,42 @@ body {
 }
 .mbti_i{
     position: absolute;
-    left: 50px;
+    left: 70px;
     top: 50px;
+    display: block;
+    width: 140px;
+    height: 140px;
+}
+.mbti_s{
+    position: absolute;
+    left: 290px;
+    top: 70px;
     display: block;
     width: 130px;
     height: 130px;
 }
-.mbti_s{
-    position: absolute;
-    left: 280px;
-    top: 60px;
-    display: block;
-    width: 120px;
-    height: 120px;
-}
 .mbti_t{
     position: absolute;
-    left: 150px;
+    left: 170px;
     top: 200px;
     display: block;
-    width: 100px;
-    height: 100px;
+    width: 110px;
+    height: 110px;
 }
 .mbti_j{
     position: absolute;
-    left: 390px;
-    top: 190px;
+    left: 420px;
+    top: 180px;
     display: block;
-    width: 140px;
-    height: 140px;
+    width: 150px;
+    height: 150px;
 }
 .education{
     position: absolute;
     right: 0;
     top: 0;
     display: block;
-    width: 560px;
+    width: 624px;
     height: 215px;
     justify-content: space-evenly;
     box-shadow: 0px 0px 30px rgb(200, 200, 200);
@@ -369,7 +367,7 @@ body {
     linear-gradient(to right, #babcfe, #a688cd, #c283d6);
     background-origin: border-box;
     background-clip: content-box, border-box;
-    border-radius: 0px 50px 0 0;
+    border-radius: 0px 0px 0 0;
     background-color: #000;
 }
 .education > span{
@@ -413,12 +411,12 @@ body {
     height: 370px;
     margin-top: -150px;
 }
-.mbti-2{
+.skill{
     position: absolute;
     right: 0;
     top: 0;
     display: block;
-    width: 620px;
+    width: 690px;
     height: 370px;
     box-shadow: 0px 0px 30px rgb(200, 200, 200);
     border: 4px solid transparent;
@@ -450,7 +448,7 @@ body {
     background-color: #a688cda1;
     z-index: -1;
 }
-.mbti-2 .container{
+.skill .container{
     display: flex;
     flex-wrap: wrap;
     align-content: stretch;
@@ -458,7 +456,7 @@ body {
     height: 250px;
     margin-top: 90px;
 }
-.mbti-2 .container .item{
+.skill .container .item{
     flex: 1 1 25%;
 }
 .item:nth-child(1){
@@ -530,7 +528,7 @@ body {
     left: 0;
     bottom: 0;
     display: block;
-    width: 560px;
+    width: 605px;
     height: 215px;
     justify-content: space-evenly;
     box-shadow: 0px 0px 30px rgb(200, 200, 200);
@@ -576,18 +574,12 @@ body {
     line-height: 20px;
     color: #000;
 }
-.vue{
-    position: relative;
-    display: block;
-    height: 100vh;
-    background-color: #f9f9f9;
-    padding: 100px 0;
-}
+
 .clonecoding{
     position: relative;
     display: block;   
     width: 100%;
-    height: 100vh;
+    height: 1000px;
     
     padding: 100px 0;
 }
@@ -600,7 +592,7 @@ body {
     color: #a688cd;
     text-align: center;
 }
-.portfolio-title{
+.clonecoding-title{
     position: relative;
     display: block;
     font-family: 'League Spartan', arial;
@@ -611,33 +603,58 @@ body {
     margin-bottom: 100px;
     color: #000;
 }
-.cc-title{
-    position: absolute;
-    right: 20px;
-    top: 10px;
-    display: block;
-    
-    border: 2px solid #000;
-    border-radius: 10px;
-    padding: 5px 10px;
-    background-color: #fff;
+.clonecoding .container{}
+.cc-left{
+    float: left;
+    width: 50%;
 }
-.cc-title h3{
-    color: #7a7a7a;
-}
-.cc-title > span{
-    font-family: 'League Spartan', arial;
-    letter-spacing: 4px;
-    line-height: 50px;
-    font-size: 32px;
-}
-.sw-img {
+.cc-img-box{
     position: relative;
     display: block;
-    width: 300px;
+    width: 600px;
     height: 400px;
     border: 6px solid #000;
-    border-radius: 30px 0 0px 0px;
+    border-radius: 50px 0 0 0;
+}
+.cc-img{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 44px 0 0 0;
+    background: url('../images/STX.png') no-repeat center;
+    background-size: cover;
+}
+.cc-right{
+    float: right;
+    width: 50%;
+}
+.cc-right-top{
+    position: relative;
+    display: block;
+    width: 600px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+.cc-text-box{
+    position: relative;
+    display: block;
+    margin-top: 10px;
+}
+.cc-text-box span{
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-family: 'Noto Sans KR';
+    line-height: 20px;
+    color: #000;
+}
+.cc-text-box h3{
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-family: 'Noto Sans KR';
+    line-height: 20px;
+    color: #000;
+    margin-bottom: 10px;
 }
 .cc-link {
     position: relative;
@@ -652,13 +669,28 @@ body {
     line-height: 30px;
     transition: background-color 0.3s;
     display: block;
-    width: 90px;
+    width: 150px;
     margin: 10px 5px;
     float: left;
 }
 .cc-link:hover {
     color: #fff;
     background-color: #a688cd;
+}
+
+.cc-swiper{
+    position: relative;
+    display: block;
+    width: 600px;
+    height: 200px;
+}
+.sw-img {
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 100px;
+    border: 2px solid #000;
+    border-radius: 0px 0 0px 0px;
 }
 .sw-slide-prev{
     position: absolute;
@@ -704,14 +736,42 @@ body {
     border-color: transparent #bbb #bbb transparent;
     cursor: pointer;
 }
+
+.vue{
+    position: relative;
+    display: block;
+    height: 1000px;
+    padding: 100px 0;
+}
+.vue > span{
+    position: relative;
+    display: block;
+    font-family: 'League Spartan', arial;
+    letter-spacing: 4px;
+    line-height: 62px;
+    color: #a688cd;
+    text-align: center;
+}
+.vue-title{
+    position: relative;
+    display: block;
+    font-family: 'League Spartan', arial;
+    letter-spacing: 4px;
+    line-height: 100px;
+    font-size: 62px;
+    text-align: center;
+    margin-bottom: 100px;
+    color: #000;
+}
 .life{
     position: relative;
     display: block;
-    height: 110vh;
+    height: 1100px;
     padding: 50px 0;
     background-color: #f9f9f9;
 }
 .life .container{
+    
 }
 .life-title{
     position: relative;
@@ -734,18 +794,39 @@ body {
     float: left;
     background-color: #000;
 }
-.img-box{
-    transition: all 0.2s linear;
-}
-.img-box:hover{
-    transform: scale(1.05);
-}
-.img-box img {
-    width: 100%;
-    transition: all 0.3s ease-in-out;
-}
 .img-box:hover img {
     opacity: 0.5;
+}
+.img-box:hover .img-box{ opacity: 1; }
+.img-box:hover .info::before { width: 60%; }
+.img-box:hover .info::after { width: 60%; }
+.info h3{
+    color:#fff; 
+    font-weight:bold; 
+    font-size:40px; 
+    text-align:center;
+}
+.info::before {
+    content: "";
+    position: absolute;
+    background: rgba(255, 255, 255, 0.7);
+    display: inline-block;
+    transition: all 0.5s;
+    left: 20%;
+    top: 0%;
+    width: 0%;
+    height: 2px; 
+}
+.info::after {
+    content: "";
+    position: absolute;
+    background: rgba(230, 230, 230, 0.7);
+    display: inline-block;
+    transition: all 0.5s;
+    left: 20%;
+    top: 90%;
+    width: 0%;
+    height: 2px; 
 }
 .img-box .info {
     position: absolute;
@@ -769,7 +850,6 @@ body {
 .img-box:hover .info {
     opacity: 1;
 }
-
 
 .life-img li:nth-child(1){
     margin-right: 20px;
@@ -801,7 +881,7 @@ body {
 .contact{
     position: relative;
     display: block;
-    height: 80vh;
+    height: 800px;
     padding: 100px 0;
 }
 .contact-left{
@@ -825,7 +905,8 @@ body {
     display: block;
     width: 850px;
     height: 500px;
-    background: url('https://via.placeholder.com/900x500.png/88c3ab') no-repeat center;
+    background: url('../images/contact_img.jpg') no-repeat center;
+    background-size: cover;
 }
 .contact-right{
     position: relative;
@@ -849,10 +930,12 @@ body {
 .contact-box{
     position: relative;
     display: block;
-    width: 80%;
+    width: 700px;
     height: 50px;
     background-color: rgba(0, 0, 0, 0.2);
     margin-top: 60px;
+
+    color:#333;
 }
 .contact-box-link{
     content: '';
@@ -890,7 +973,7 @@ body {
 .footer{
     position: relative;
     display: block;
-    height: 30vh;
+    height: 300px;
 }
 .footer-logo{
     position: absolute;

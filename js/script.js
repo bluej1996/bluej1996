@@ -123,13 +123,13 @@ $(document).ready(function () {
 
 
     let sw_cc = new Swiper('.sw-cc', {
-        slidesPerView: 3,
+        slidesPerView: 2,
         loop: true,
         autoplay: {
             delay: 10000,
             disableOnInteraction: false,
         },
-        spaceBetween: 50,
+        spaceBetween: 0,
         navigation: {
             nextEl: '.sw-slide-next',
             prevEl: '.sw-slide-prev',
