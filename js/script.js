@@ -121,15 +121,34 @@ $(document).ready(function () {
         offset: '90%' 
     });
 
+    let cc_img = $('.cc-img-box div');
+    let cc_text_box = $('.cc-text-box');
+    let sw_img = $('.sw-img')
+    $.each(sw_img, function (index, item) {
+
+        $(this).click(function (event) {
+            event.preventDefault();
+
+            // 메뉴의 포커스를 제거한다.
+            cc_img.removeClass('cc-img-active')
+            cc_img.eq(index).addClass('cc-img-active');
+
+            // 내용의 포커스를 제거한다.
+            cc_text_box.removeClass('cc-text-box-active');
+            cc_text_box.eq(index).addClass('cc-text-box-active');
+        });
+
+    });
+
 
     let sw_cc = new Swiper('.sw-cc', {
         slidesPerView: 2,
-        loop: true,
         autoplay: {
-            delay: 10000,
+            delay: 5000,
             disableOnInteraction: false,
         },
         spaceBetween: 0,
+        centeredSlides: false,
         navigation: {
             nextEl: '.sw-slide-next',
             prevEl: '.sw-slide-prev',
