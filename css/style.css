@@ -749,51 +749,6 @@ body {
     height: 60px;
     cursor: pointer;
 }
-
-/* .sw-slide-prev{
-    position: absolute;
-    left: 30px;
-    top: 50%;
-    transform: translateY(-50%);
-    display: block;
-    background-color: rgba(0, 0, 0, 0);
-    border: 0;
-    z-index: 99;
-}
-.sw-slide-prev::after{
-    content: '';
-    position: relative;
-    display: inline-block;
-    transform: rotate(135deg);
-    width: 25px;
-    height: 25px;
-    border-width: 0 2px 2px 0;
-    border-style: solid;
-    border-color: transparent #bbb #bbb transparent;
-    cursor: pointer;
-}
-.sw-slide-next{
-    position: absolute;
-    right: 30px;
-    top: 50%;
-    transform: translateY(-50%);
-    display: block;
-    background-color: rgba(0, 0, 0, 0);
-    border: 0;
-    z-index: 99;
-}
-.sw-slide-next::after{
-    content: '';
-    position: relative;
-    display: inline-block;
-    transform: rotate(315deg);
-    width: 25px;
-    height: 25px;
-    border-width: 0 2px 2px 0;
-    border-style: solid;
-    border-color: transparent #bbb #bbb transparent;
-    cursor: pointer;
-} */
 .cc-img-box{
     position: relative;
     display: block;
@@ -814,7 +769,6 @@ body {
     height: 0%;
     box-shadow: 0 0.25rem 1rem rgb(0 0 0 / 20%);
     border-radius: 10px;
-    opacity: 0;
     transition: all 1.0s;
 }
 .cc-img-1{
@@ -846,26 +800,32 @@ body {
     background-size: cover;
 }
 .cc-img-active{
-    opacity: 1;
+    display: block;
     height: 100%;
     visibility: visible;
 }
-.cc-txt{
+.cc-right{
     position: relative;
     display: block;
     width: 30%;
     height: 200px;
     float: left;
     margin-left: 60px;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 .cc-text-box{
     position: relative;
     display: none;
-    margin-top: 10px;
+    /* visibility: hidden;
+    height: 0;
+    opacity: 0;
+    transition: opacity 1s; */
 }
 .cc-text-box-active{
     display: block;
+    /* visibility: visible;
+    height: 100%;
+    opacity: 1; */
 }
 .cc-text-box span{
     font-size: 24px;
@@ -912,7 +872,7 @@ body {
 }
 
 
-.vue{
+/* .vue{
     position: relative;
     display: block;
     height: 1200px;
@@ -939,7 +899,7 @@ body {
     text-align: center;
     margin-bottom: 100px;
     color: #000;
-}
+} */
 .life{
     position: relative;
     display: block;
