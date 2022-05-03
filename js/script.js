@@ -31,12 +31,12 @@ $(document).ready(function () {
             }, 500);
         });
     });
-
+    // c0d4f5 9ddafa 8093e8 1ca1ef 1477c6 000d49
     var mbti_1 = new ProgressBar.Circle(mbti_i, {
         strokeWidth: 6,
         easing: 'easeInOut',
         duration: 1400,
-        color: '#babcfe',
+        color: '#000d49',
         trailColor: '#eee',
         trailWidth: 1,
         svgStyle: null
@@ -48,7 +48,7 @@ $(document).ready(function () {
         strokeWidth: 6,
         easing: 'easeInOut',
         duration: 1400,
-        color: '#a688cd',
+        color: '#1ca1ef',
         trailColor: '#eee',
         trailWidth: 1,
         svgStyle: null
@@ -60,7 +60,7 @@ $(document).ready(function () {
         strokeWidth: 6,
         easing: 'easeInOut',
         duration: 1400,
-        color: '#c283d6',
+        color: '#8093e8',
         trailColor: '#eee',
         trailWidth: 1,
         svgStyle: null
@@ -72,7 +72,7 @@ $(document).ready(function () {
         strokeWidth: 6,
         easing: 'easeInOut',
         duration: 1400,
-        color: '#8d3581',
+        color: '#c0d4f5',
         trailColor: '#eee',
         trailWidth: 1,
         svgStyle: null
@@ -121,6 +121,246 @@ $(document).ready(function () {
         offset: '90%' 
     });
 
+    var bar = new ProgressBar.Line(html, {
+        strokeWidth: 4,
+        easing: 'easeInOut',
+        duration: 1400,
+        color: '#e44f26',
+        trailColor: '#eee',
+        trailWidth: 1,
+        svgStyle: {width: '100%', height: '100%'},
+        text: {
+        style: {
+            // Text color.
+            // Default: same as stroke color (options.color)
+            color: '#999',
+            position: 'absolute',
+            right: '35px',
+            top: '-10px',
+            padding: 0,
+            margin: 0,
+        },
+        autoStyleContainer: false
+        },
+        from: {color: '#FFEA82'},
+        to: {color: '#ED6A5A'},
+        step: (state, bar) => {
+        bar.setText(Math.round(bar.value() * 100) + ' %');
+        }
+    });
+    
+    bar.animate(1.0);  // Number from 0.0 to 1.0
+
+    var bar = new ProgressBar.Line(css, {
+        strokeWidth: 4,
+        easing: 'easeInOut',
+        duration: 1400,
+        color: '#33a9dc',
+        trailColor: '#eee',
+        trailWidth: 1,
+        svgStyle: {width: '100%', height: '100%'},
+        text: {
+        style: {
+            // Text color.
+            // Default: same as stroke color (options.color)
+            color: '#999',
+            position: 'absolute',
+            right: '35px',
+            top: '-10px',
+            padding: 0,
+            margin: 0,
+        },
+        autoStyleContainer: false
+        },
+        from: {color: '#FFEA82'},
+        to: {color: '#ED6A5A'},
+        step: (state, bar) => {
+        bar.setText(Math.round(bar.value() * 100) + ' %');
+        }
+    });
+    
+    bar.animate(1.0);  // Number from 0.0 to 1.0
+
+    var bar = new ProgressBar.Line(js, {
+        strokeWidth: 4,
+        easing: 'easeInOut',
+        duration: 1400,
+        color: '#ffd83a',
+        trailColor: '#eee',
+        trailWidth: 1,
+        svgStyle: {width: '100%', height: '100%'},
+        text: {
+        style: {
+            // Text color.
+            // Default: same as stroke color (options.color)
+            color: '#999',
+            position: 'absolute',
+            right: '35px',
+            top: '-10px',
+            padding: 0,
+            margin: 0,
+        },
+        autoStyleContainer: false
+        },
+        from: {color: '#FFEA82'},
+        to: {color: '#ED6A5A'},
+        step: (state, bar) => {
+        bar.setText(Math.round(bar.value() * 100) + ' %');
+        }
+    });
+    
+    bar.animate(0.90);  // Number from 0.0 to 1.0
+
+    var bar = new ProgressBar.Line(jquery, {
+        strokeWidth: 4,
+        easing: 'easeInOut',
+        duration: 1400,
+        color: '#1572b6',
+        trailColor: '#eee',
+        trailWidth: 1,
+        svgStyle: {width: '100%', height: '100%'},
+        text: {
+        style: {
+            // Text color.
+            // Default: same as stroke color (options.color)
+            color: '#999',
+            position: 'absolute',
+            right: '35px',
+            top: '-10px',
+            padding: 0,
+            margin: 0,
+        },
+        autoStyleContainer: false
+        },
+        from: {color: '#FFEA82'},
+        to: {color: '#ED6A5A'},
+        step: (state, bar) => {
+        bar.setText(Math.round(bar.value() * 100) + ' %');
+        }
+    });
+    
+    bar.animate(0.95);  // Number from 0.0 to 1.0
+
+    var bar = new ProgressBar.Line(git, {
+        strokeWidth: 4,
+        easing: 'easeInOut',
+        duration: 1400,
+        color: '#000',
+        trailColor: '#eee',
+        trailWidth: 1,
+        svgStyle: {width: '100%', height: '100%'},
+        text: {
+        style: {
+            // Text color.
+            // Default: same as stroke color (options.color)
+            color: '#999',
+            position: 'absolute',
+            right: '35px',
+            top: '-10px',
+            padding: 0,
+            margin: 0,
+        },
+        autoStyleContainer: false
+        },
+        from: {color: '#FFEA82'},
+        to: {color: '#ED6A5A'},
+        step: (state, bar) => {
+        bar.setText(Math.round(bar.value() * 100) + ' %');
+        }
+    });
+    
+    bar.animate(0.95);  // Number from 0.0 to 1.0
+
+    var bar = new ProgressBar.Line(scss, {
+        strokeWidth: 4,
+        easing: 'easeInOut',
+        duration: 1400,
+        color: '#cd62a9',
+        trailColor: '#eee',
+        trailWidth: 1,
+        svgStyle: {width: '100%', height: '100%'},
+        text: {
+        style: {
+            // Text color.
+            // Default: same as stroke color (options.color)
+            color: '#999',
+            position: 'absolute',
+            right: '35px',
+            top: '-10px',
+            padding: 0,
+            margin: 0,
+        },
+        autoStyleContainer: false
+        },
+        from: {color: '#FFEA82'},
+        to: {color: '#ED6A5A'},
+        step: (state, bar) => {
+        bar.setText(Math.round(bar.value() * 100) + ' %');
+        }
+    });
+    
+    bar.animate(0.85);  // Number from 0.0 to 1.0
+
+    var bar = new ProgressBar.Line(bs, {
+        strokeWidth: 4,
+        easing: 'easeInOut',
+        duration: 1400,
+        color: '#5b4282',
+        trailColor: '#eee',
+        trailWidth: 1,
+        svgStyle: {width: '100%', height: '100%'},
+        text: {
+        style: {
+            // Text color.
+            // Default: same as stroke color (options.color)
+            color: '#999',
+            position: 'absolute',
+            right: '35px',
+            top: '-10px',
+            padding: 0,
+            margin: 0,
+        },
+        autoStyleContainer: false
+        },
+        from: {color: '#FFEA82'},
+        to: {color: '#ED6A5A'},
+        step: (state, bar) => {
+        bar.setText(Math.round(bar.value() * 100) + ' %');
+        }
+    });
+    
+    bar.animate(0.85);  // Number from 0.0 to 1.0
+
+    var bar = new ProgressBar.Line(vue, {
+        strokeWidth: 4,
+        easing: 'easeInOut',
+        duration: 1400,
+        color: '#2fb982',
+        trailColor: '#eee',
+        trailWidth: 1,
+        svgStyle: {width: '100%', height: '100%'},
+        text: {
+        style: {
+            // Text color.
+            // Default: same as stroke color (options.color)
+            color: '#999',
+            position: 'absolute',
+            right: '35px',
+            top: '-10px',
+            padding: 0,
+            margin: 0,
+        },
+        autoStyleContainer: false
+        },
+        from: {color: '#FFEA82'},
+        to: {color: '#ED6A5A'},
+        step: (state, bar) => {
+        bar.setText(Math.round(bar.value() * 100) + ' %');
+        }
+    });
+    
+    bar.animate(0.7);  // Number from 0.0 to 1.0
+
     let cc_img = $('.cc-img-box div');
     let cc_text_box = $('.cc-text-box');
     let sw_img = $('.sw-img')
@@ -141,19 +381,14 @@ $(document).ready(function () {
     });
 
 
-    let sw_cc = new Swiper('.sw-cc', {
-        slidesPerView: 2,
-        autoplay: {
-            delay: 5000,
-            disableOnInteraction: false,
-        },
-        spaceBetween: 0,
-        centeredSlides: false,
-        navigation: {
-            nextEl: '.sw-slide-next',
-            prevEl: '.sw-slide-prev',
-        },
+    var sw_cc = new Swiper('.sw-cc', {
+        direction: 'vertical',
+        slidesPerView: 4,
+        spaceBetween: 50,
+        autoplay:true,
+        mousewheel: true,
     });
+
 
     var words = ['Hello, I am developer Lee Junhong. I still have a lot of shortcomings, but I am a developer who has a lot of will to learn and tries hard. We will work hard every day to show you how we grow :)'
     ],

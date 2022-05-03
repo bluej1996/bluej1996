@@ -42,7 +42,7 @@ html {
 
 /* SCROLL */
 ::-webkit-scrollbar {
-    width: 5px;
+    width: 8px;
 }
 
 /* 스크롤바의 width */
@@ -52,7 +52,7 @@ html {
 
 /* 스크롤바의 전체 배경색 */
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(to top, #babcfe, #a688cd);
+    background: linear-gradient(to top, #babcfe, #4169e1);
 }
 
 /* 스크롤바 색 */
@@ -76,13 +76,14 @@ html {
     margin: 0 auto;
 }
 .bg-right{
-    position: absolute;
+    position: fixed;
     left: 1600px;
     top: 60px;
     display: block;
     writing-mode: vertical-lr;
     letter-spacing: 5px;
     opacity: 0.3;
+    z-index: -1;
 
     background-image: linear-gradient(
         -225deg,
@@ -195,7 +196,7 @@ body {
     letter-spacing: 4px;
 }
 .mainmenu li:hover a {
-    color: #a688cd;
+    color: #4169e1;
 }
 .main{
     position: relative;
@@ -221,7 +222,7 @@ body {
     padding-top: 330px;
     margin-bottom: 25px;
     letter-spacing: -3px;
-    color: #a688cd;
+    color: #4169e1;
     font-size: 10px;
     opacity: .3;
     animation: waviy 1.5s infinite;
@@ -277,36 +278,38 @@ body {
     display: block;
     width: 2px;
     height: 100px;
-    background-color: #a688cd;
+    background-color: #4169e17e;
 }
 .aboutme{
     position: relative;
     display: block;
     height: 850px;
+    margin: 0 0 100px 0;
 }
 .aboutme > .container{
     height: 100%;
     padding-top: 80px;
+    width: 1400px;
 }
 .aboutme-top{
     position: relative;
     display: block;
     width: 100%;
-    height: 370px;
+    height: 400px;
 }
 .mbti-1{
     position: relative;
     display: block;
-    width: 670px;
-    height: 370px;
+    width: 720px;
+    height: 400px;
     justify-content: space-evenly;
     box-shadow: 0px 0px 30px rgb(200, 200, 200);
     border: 4px solid transparent;
     background-image: linear-gradient(#fff, #fff),
-    linear-gradient(to right, #babcfe, #a688cd, #c283d6);
+    linear-gradient(to right, #c0d4f5, #9ddafa, #8093e8,#1ca1ef);
     background-origin: border-box;
     background-clip: content-box, border-box;
-    border-radius: 30px 0 0 0;
+    border-radius: 20px 0 0 0;
     background-color: #000;
 }
 .mbti-1 span{
@@ -321,48 +324,48 @@ body {
     left: 70px;
     top: 50px;
     display: block;
-    width: 140px;
-    height: 140px;
+    width: 150px;
+    height: 150px;
 }
 .mbti_s{
     position: absolute;
     left: 290px;
     top: 70px;
     display: block;
-    width: 130px;
-    height: 130px;
+    width: 140px;
+    height: 140px;
 }
 .mbti_t{
     position: absolute;
     left: 170px;
-    top: 200px;
+    top: 210px;
     display: block;
-    width: 110px;
-    height: 110px;
+    width: 120px;
+    height: 120px;
 }
 .mbti_j{
     position: absolute;
     left: 420px;
     top: 180px;
     display: block;
-    width: 150px;
-    height: 150px;
+    width: 160px;
+    height: 160px;
 }
 .education{
     position: absolute;
     right: 0;
     top: 0;
     display: block;
-    width: 624px;
-    height: 215px;
+    width: 674px;
+    height: 265px;
     justify-content: space-evenly;
     box-shadow: 0px 0px 30px rgb(200, 200, 200);
     border: 4px solid transparent;
     background-image: linear-gradient(#fff, #fff),
-    linear-gradient(to right, #babcfe, #a688cd, #c283d6);
+    linear-gradient(to right, #1ca1ef, #1477c6, #000d49);
     background-origin: border-box;
     background-clip: content-box, border-box;
-    border-radius: 0 0 0 0;
+    border-radius: 0 0px 0px 0;
     background-color: #000;
 }
 .education > span{
@@ -384,7 +387,7 @@ body {
     display: block;
     width: 150px;
     height: 17px;
-    background-color: #a688cda1;
+    background-color: #9ddafa;
     z-index: -1;
 }
 .education p{
@@ -393,17 +396,17 @@ body {
     top: 80px;
     display: block;
 
-    font-size: 14px;
+    font-size: 15px;
     letter-spacing: 1px;
     font-family: 'Noto Sans KR';
-    line-height: 20px;
+    line-height: 27px;
     color: #000;
 }
 .aboutme-bottom{
     position: relative;
     display: block;
     width: 100%;
-    height: 370px;
+    height: 400px;
     margin-top: -150px;
 }
 .skill{
@@ -411,15 +414,15 @@ body {
     right: 0;
     top: 0;
     display: block;
-    width: 690px;
-    height: 370px;
+    width: 780px;
+    height: 400px;
     box-shadow: 0px 0px 30px rgb(200, 200, 200);
     border: 4px solid transparent;
     background-image: linear-gradient(#fff, #fff),
-    linear-gradient(to right, #c283d6, #c986c4, #8d3581);
+    linear-gradient(to right, #1ca1ef, #1477c6, #000d49);
     background-origin: border-box;
     background-clip: content-box, border-box;
-    border-radius: 30px 0 30px 0;
+    border-radius: 20px 20px 20px 0;
 }
 .skill-title{
     position: absolute;
@@ -429,7 +432,7 @@ body {
     font-family: 'League Spartan', arial;
     letter-spacing: 4px;
     line-height: 20px;
-    font-size: 20px;
+    font-size: 23px;
     color: #444;
 }
 .skill-title::after{
@@ -438,83 +441,82 @@ body {
     left: 8px;
     top: 35%;
     display: block;
-    width: 70px;
-    height: 17px;
-    background-color: #a688cda1;
+    width: 80px;
+    height: 19px;
+    background-color: #9ddafa;
     z-index: -1;
 }
 .skill .container{
     display: flex;
     flex-wrap: wrap;
     align-content: stretch;
-    width: 620px;
-    height: 250px;
+    width: 650px;
+    height: 280px;
     margin-top: 90px;
 }
 .skill .container .item{
     flex: 1 1 25%;
 }
+#html,#css,#js,#jquery,#git,#scss,#bs,#vue{
+    margin-top: 105px;
+    margin-left: 30px;
+    width: 100px;
+    height: 5px;
+    position: relative;
+}
 .item:nth-child(1){
     position: relative;
     display: block;
-    width: 120px;
-    height: 80px;
+    height: 90px;
     background: url('../images/skills_1.png') no-repeat center;
     background-size: contain;
 }
 .item:nth-child(2){
     position: relative;
     display: block;
-    width: 120px;
-    height: 80px;
+    height: 90px;
     background: url('../images/skills_2.png') no-repeat center;
     background-size: contain;
 }
 .item:nth-child(3){
     position: relative;
     display: block;
-    width: 120px;
-    height: 80px;
+    height: 90px;
     background: url('../images/skills_3.png') no-repeat center;
     background-size: contain;
 }
 .item:nth-child(4){
     position: relative;
     display: block;
-    width: 120px;
-    height: 80px;
+    height: 90px;
     background: url('../images/skills_4.png') no-repeat center;
     background-size: contain;
 }
 .item:nth-child(5){
     position: relative;
     display: block;
-    width: 120px;
-    height: 80px;
+    height: 90px;
     background: url('../images/skills_5.png') no-repeat center;
     background-size: contain;
 }
 .item:nth-child(6){
     position: relative;
     display: block;
-    width: 120px;
-    height: 80px;
+    height: 90px;
     background: url('../images/skills_6.png') no-repeat center;
     background-size: contain;
 }
 .item:nth-child(7){
     position: relative;
     display: block;
-    width: 120px;
-    height: 80px;
+    height: 90px;
     background: url('../images/skills_7.png') no-repeat center;
     background-size: contain;
 }
 .item:nth-child(8){
     position: relative;
     display: block;
-    width: 120px;
-    height: 80px;
+    height: 90px;
     background: url('../images/skills_8.png') no-repeat center;
     background-size: contain;
 }
@@ -523,16 +525,16 @@ body {
     left: 0;
     bottom: 0;
     display: block;
-    width: 605px;
-    height: 215px;
+    width: 655px;
+    height: 245px;
     justify-content: space-evenly;
     box-shadow: 0px 0px 30px rgb(200, 200, 200);
     border: 4px solid transparent;
     background-image: linear-gradient(#fff, #fff),
-    linear-gradient(to right, #babcfe, #a688cd, #c283d6);
+    linear-gradient(to right, #c0d4f5, #9ddafa, #8093e8, #1ca1ef);
     background-origin: border-box;
     background-clip: content-box, border-box;
-    border-radius: 0px 0px 0px 0px;
+    border-radius: 0px 0px 20px 0px;
     background-color: #000;
 }
 .mbti-text > span{
@@ -546,6 +548,7 @@ body {
     color: #444;
     font-size: 20px;
 }
+
 .mbti-text > span::before{
     content: '';
     position: absolute;
@@ -554,213 +557,200 @@ body {
     display: block;
     width: 150px;
     height: 17px;
-    background-color: #a688cda1;
+    background-color: #9ddafa;
     z-index: -1;
 }
-.mbti-text p{
+.ISTJ-txt-1{
     position: absolute;
     left: 30px;
     top: 80px;
     display: block;
 
-    font-size: 13px;
+    font-size: 14px;
     letter-spacing: 1px;
     font-family: 'Noto Sans KR';
-    line-height: 20px;
+    line-height: 27px;
     color: #000;
 }
+.ISTJ-txt-1 > i{
+    content: '';
+    position: absolute;
+    left: 45px;
+    top: 15px;
+    display: block;
+    width: 150px;
+    height: 10px;
+    background-color: #c0d4f5;
+    z-index: -1;
+}
+.ISTJ-txt-2{
+    position: absolute;
+    left: 30px;
+    top: 107px;
+    display: block;
 
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family: 'Noto Sans KR';
+    line-height: 27px;
+    color: #000;
+}
+.ISTJ-txt-2 > i{
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: 15px;
+    display: block;
+    width: 190px;
+    height: 10px;
+    background-color: #c0d4f5;
+    z-index: -1;
+}
+.ISTJ-txt-3{
+    position: absolute;
+    left: 30px;
+    top: 134px;
+    display: block;
+
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family: 'Noto Sans KR';
+    line-height: 27px;
+    color: #000;
+}
+.ISTJ-txt-3 > i{
+    content: '';
+    position: absolute;
+    left: 165px;
+    top: 15px;
+    display: block;
+    width: 45px;
+    height: 10px;
+    background-color: #c0d4f5;
+    z-index: -1;
+}
+.ISTJ-txt-4{
+    position: absolute;
+    left: 30px;
+    top: 161px;
+    display: block;
+
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family: 'Noto Sans KR';
+    line-height: 27px;
+    color: #000;
+}
+.ISTJ-txt-4 > i{
+    content: '';
+    position: absolute;
+    left: 197px;
+    top: 15px;
+    display: block;
+    width: 186px;
+    height: 10px;
+    background-color: #c0d4f5;
+    z-index: -1;
+}
+.ISTJ-txt-5{
+    position: absolute;
+    left: 30px;
+    top: 188px;
+    display: block;
+
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family: 'Noto Sans KR';
+    line-height: 27px;
+    color: #000;
+}
+.ISTJ-txt span::before{
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    display: block;
+    width: 30px;
+    height: 10px;
+    background-color: #9ddafa;
+    z-index: -1;
+}
 .clonecoding{
     position: relative;
     display: block;   
     width: 100%;
-    height: 1000px;
-    margin-top: 50px;
+    height: 1100px;
+    padding-top: 150px;
+    background: rgb(192,212,245);
+    background: -moz-linear-gradient(left,  #ebf5ff 17.8%, #d4eafd 17.8%, #d4eafd 66.8%, #ebf5ff 66.8%);
+    background: -webkit-linear-gradient(left,  #ebf5ff 17.8%,#d4eafd 17.8%,#d4eafd 66.8%,#ebf5ff 66.8%);
+    background: linear-gradient(to right,  #ebf5ff 17.8%,#d4eafd 17.8%,#d4eafd 66.8%,#ebf5ff 66.8%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c0d4f5', endColorstr='#8093e8',GradientType=1 );
+
 }
-.clonecoding > span{
+.portfoilo-title{
     position: relative;
     display: block;
     font-family: 'League Spartan', arial;
     letter-spacing: 4px;
-    line-height: 62px;
-    color: #a688cd;
-    text-align: center;
+    line-height: 50px;
+    font-size: 50px;
+    color: #000;
+    margin-left: 34%;
+    margin-bottom: 150px;
+}
+.portfoilo-title::before{
+    content: '';
+    position: absolute;
+    left: 160px;
+    top: 70px;
+    transform: translateX(-50%);
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: #000;
+    z-index: 20;
 }
 .clonecoding-title{
-    position: relative;
+    position: absolute;
+    right: 400px;
+    top: 300px;
     display: block;
-    font-family: 'League Spartan', arial;
-    letter-spacing: 4px;
-    line-height: 100px;
-    font-size: 62px;
-    text-align: center;
-    margin-bottom: 100px;
+    font-family: 'Noto Sans KR';
+    letter-spacing: 1px;
+    line-height: 30px;
+    font-size: 30px;
+    font-weight: 500;
+    margin-left: 21.5%;
     color: #000;
 }
 .clonecoding .container{
-    width: 1500px;
-}
-.cc-left{
-    float: left;
-    width: 50%;
-}
-.cc-img-box{
-    position: relative;
-    display: block;
-    width: 700px;
-    height: 500px;
-    border: 4px solid #000;
-    box-shadow: 0px 0px 30px rgb(200, 200, 200);
-}
-.cc-img-1{
-    position: relative;
-    display: none;
     width: 100%;
     height: 100%;
-    background: url('../images/domino.png') no-repeat center;
-    background-size: cover;
-}
-.cc-img-2{
-    position: relative;
-    display: none;
-    width: 100%;
-    height: 100%;
-    background: url('../images/STX.png') no-repeat center;
-    background-size: cover;
-}
-.cc-img-3{
-    position: relative;
-    display: none;
-    width: 100%;
-    height: 100%;
-    background: url('../images/hansalim.png') no-repeat center;
-    background-size: cover;
-}
-.cc-img-4{
-    position: relative;
-    display: none;
-    width: 100%;
-    height: 100%;
-    background: url('../images/pulmuone.png') no-repeat center;
-    background-size: cover;
-}
-.cc-img-5{
-    position: relative;
-    display: none;
-    width: 100%;
-    height: 100%;
-    background: url('../images/klia.png') no-repeat center;
-    background-size: cover;
-}
-.cc-img-6{
-    position: relative;
-    display: none;
-    width: 100%;
-    height: 100%;
-    background: url('../images/pnuh.png') no-repeat center;
-    background-size: cover;
-}
-.cc-img-7{
-    position: relative;
-    display: none;
-    width: 100%;
-    height: 100%;
-    background: url('../images/sancheong.png') no-repeat center;
-    background-size: cover;
-}
-.cc-img-active{
-    display: block;
-}
-.cc-right{
-    position: relative;
-    display: block;
-    float: right;
-    width: 50%;
-    height: 442px;
-}
-.cc-right-top{
-    position: relative;
-    display: block;
-    width: 600px;
-    height: 200px;
-    margin-bottom: 10px;
-}
-.cc-text-box{
-    position: relative;
-    display: none;
-    margin-top: 10px;
-}
-.cc-text-box-active{
-    display: block;
-}
-.cc-text-box span{
-    font-size: 16px;
-    letter-spacing: 1px;
-    font-family: 'Noto Sans KR';
-    line-height: 20px;
-    color: #000;
-    font-weight: 500;
-}
-.cc-text-box h3{
-    font-size: 16px;
-    letter-spacing: 1px;
-    font-family: 'Noto Sans KR';
-    line-height: 20px;
-    color: #000;
-    font-weight: 300;
-    margin-bottom: 10px;
-}
-.cc-link {
-    position: relative;
-    display: block;
-    color: #fff;
-    background-color: #a688cd;
-    text-align: center;
-    font-size: 15px;
-    letter-spacing: 2px;
-    font-family: 'Noto Sans KR', sans-serif;
-    text-transform: uppercase;
-    font-weight: 300;
-    line-height: 50px;
-    transition: background-color 0.3s;
-    display: block;
-    width: 150px;
-    margin: 30px 5px 0 5px;
-    float: left;
-}
-.cc-text-box a:nth-child(2){
-    background-color: #babcfe;
-}
-.cc-link:nth-child(3){
-    background-color: #c283d6;
-}
-.cc-link:hover {
-    background-color: #fff;
-    border: 1px solid #a688cd;
-    color: #a688cd;
+    margin-top: 10px
 }
 .cc-swiper{
-    position: absolute;
-    right: 250px;
-    bottom: 0;
+    position: relative;
     display: block;
-    width: 500px;
+    width: 20%;
+    float: left;
 }
 .sw-cc{
     position: relative;
     display: block;
-    padding-left: 30px;
+    margin-left: 100px;
+    margin-top: 70px;
+    height: 500px;
 }
 .sw-img {
     position: relative;
     display: block;
-    width: 200px;
-    height: 120px;
-    border: 1px solid #000;
-    border-radius: 0px 0 0px 0px;
+    width: 180px;
+    height: 60px;
     cursor: pointer;
 }
-.sw-slide-prev{
+
+/* .sw-slide-prev{
     position: absolute;
     left: 30px;
     top: 50%;
@@ -803,13 +793,132 @@ body {
     border-style: solid;
     border-color: transparent #bbb #bbb transparent;
     cursor: pointer;
+} */
+.cc-img-box{
+    position: relative;
+    display: block;
+    width: 45%;
+    height: 60%;
+    float: left;
 }
+.cc-img-1,
+.cc-img-2,
+.cc-img-3,
+.cc-img-4,
+.cc-img-5,
+.cc-img-6,
+.cc-img-7{
+    position: relative;
+    visibility: hidden;
+    width: 100%;
+    height: 0%;
+    box-shadow: 0 0.25rem 1rem rgb(0 0 0 / 20%);
+    border-radius: 10px;
+    opacity: 0;
+    transition: all 1.0s;
+}
+.cc-img-1{
+    background: url('../images/domino.png') no-repeat center;
+    background-size: cover;
+}
+.cc-img-2{
+    background: url('../images/STX.png') no-repeat center;
+    background-size: cover;
+}
+.cc-img-3{
+    background: url('../images/hansalim.png') no-repeat center;
+    background-size: cover;
+}
+.cc-img-4{
+    background: url('../images/pulmuone.png') no-repeat center;
+    background-size: cover;
+}
+.cc-img-5{
+    background: url('../images/klia.png') no-repeat center;
+    background-size: cover;
+}
+.cc-img-6{
+    background: url('../images/pnuh.png') no-repeat center;
+    background-size: cover;
+}
+.cc-img-7{
+    background: url('../images/sancheong.png') no-repeat center;
+    background-size: cover;
+}
+.cc-img-active{
+    opacity: 1;
+    height: 100%;
+    visibility: visible;
+}
+.cc-txt{
+    position: relative;
+    display: block;
+    width: 30%;
+    height: 200px;
+    float: left;
+    margin-left: 60px;
+    margin-top: 20px;
+}
+.cc-text-box{
+    position: relative;
+    display: none;
+    margin-top: 10px;
+}
+.cc-text-box-active{
+    display: block;
+}
+.cc-text-box span{
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-family: 'Noto Sans KR';
+    line-height: 34px;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.cc-text-box h3{
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-family: 'Noto Sans KR';
+    line-height: 34px;
+    color: #000;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+.cc-link {
+    position: relative;
+    display: block;
+    color: #000;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    line-height: 50px;
+    border: 1px solid #000;
+    transition: background-color 0.3s;
+    display: block;
+    width: 150px;
+    margin: 30px 5px 0 5px;
+    float: left;
+}
+.cc-text-box a:nth-child(2){
+    background-color: #000d49;
+}
+.cc-link:hover {
+    background-color: #000d49;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
 
 .vue{
     position: relative;
     display: block;
-    height: 1000px;
+    height: 1200px;
     padding: 100px 0;
+    background: #f5f5f5;
+
 }
 .vue > span{
     position: relative;
@@ -817,7 +926,7 @@ body {
     font-family: 'League Spartan', arial;
     letter-spacing: 4px;
     line-height: 62px;
-    color: #a688cd;
+    color: #4169e1;
     text-align: center;
 }
 .vue-title{
@@ -834,8 +943,8 @@ body {
 .life{
     position: relative;
     display: block;
-    height: 1100px;
-    padding: 50px 0;
+    height: 1200px;
+    padding: 100px 0;
 }
 .life .container{
     
@@ -860,6 +969,10 @@ body {
     display: block;
     float: left;
     background-color: #000;
+    margin: 10px;
+}
+.info{
+    margin-bottom: 10px;
 }
 .img-box:hover img {
     opacity: 0.5;
@@ -917,32 +1030,10 @@ body {
 .img-box:hover .info {
     opacity: 1;
 }
-
-.life-img li:nth-child(1){
-    margin-right: 20px;
-    margin-bottom: 20px;
-}
-.life-img li:nth-child(3){
-    margin-bottom: 20px;
-}
-.life-img li:nth-child(2),
-.life-img li:nth-child(4),
-.life-img li:nth-child(5){
-    margin-right: 20px;
-}
-.life-img li img:nth-child(1),
-.life-img li img:nth-child(2),
-.life-img li img:nth-child(3){
-    position: relative;
-    display: block;
-    max-height: 350px;
-}
-.life-img li img:nth-child(4),
-.life-img li img:nth-child(5),
-.life-img li img:nth-child(6){
-    position: relative;
-    display: block;
-    max-height: 250px;
+.img-box img {
+    background-size: contain;
+    width: 400px;
+    height: 400px;
 }
 
 .contact{
@@ -955,7 +1046,7 @@ body {
     background-size: cover;
     background-attachment: fixed;
 
-    overflow: hidden;
+    z-index: 9;
 }
 .contact-left{
     position: relative;
@@ -1003,7 +1094,7 @@ body {
 .contact-box{
     position: relative;
     display: block;
-    width: 700px;
+    width: 600px;
     height: 50px;
     background-color: rgba(0, 0, 0, 0.2);
     margin-top: 60px;
@@ -1077,7 +1168,7 @@ body {
     margin: 0 30px;
 }
 .footer-menu li:hover a {
-    color: #a688cd;
+    color: #4169e1;
 }
 .footer-menu li a{
     font-family: 'League Spartan', arial;
