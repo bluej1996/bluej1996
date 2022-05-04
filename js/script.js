@@ -384,8 +384,11 @@ $(document).ready(function () {
     var sw_cc = new Swiper('.sw-cc', {
         direction: 'vertical',
         slidesPerView: 4,
-        spaceBetween: 50,
-        autoplay:true,
+        spaceBetween: 30,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
         mousewheel: true,
     });
 
