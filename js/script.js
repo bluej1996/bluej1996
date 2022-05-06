@@ -363,8 +363,8 @@ $(document).ready(function () {
 
     let cc_img = $('.cc-img-box div');
     let cc_text_box = $('.cc-text-box');
-    let sw_img = $('.sw-img')
-    $.each(sw_img, function (index, item) {
+    let sw_title = $('.swiper-title')
+    $.each(sw_title, function (index, item) {
 
         $(this).click(function (event) {
             event.preventDefault();
