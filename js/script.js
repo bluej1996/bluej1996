@@ -1,7 +1,7 @@
 $(document).ready(function () {
     AOS.init();
 
-    let menu_id = ['#aboutme', '#portfoilo', '#life', '#contact'];
+    let menu_id = ['#home','#aboutme', '#portfoilo', '#life', '#contact',];
     let menu_pos = [];
     for (let i = 0; i < menu_id.length; i++) {
         menu_pos[i] = $(menu_id[i]).offset().top;
@@ -13,8 +13,23 @@ $(document).ready(function () {
         }
     });
 
-    let footer_a = $('.footer-menu a');
+    let header = $('.header');
+
+    $(window).scroll(function () {
+        let sc = $(window).scrollTop();
+        if (sc >= 1) {
+            header.addClass('header-active');
+            $('.visual').css('padding-top', 90);
+        } else {
+            header.removeClass('header-active');
+            $('.visual').css('padding-top', 0);
+        }
+    });
+
+    // let footer_a = $('.footer-menu a');
     let gnb_a = $('.mainmenu a');
+    let logo = $('.logo');
+    let f_logo = $('.footer-logo')
     $.each(gnb_a, function (index, item) {
         $(this).click(function (event) {
             event.preventDefault();
@@ -23,7 +38,7 @@ $(document).ready(function () {
             }, 500);
         });
     });
-    $.each(footer_a, function (index, item) {
+    $.each(logo, function (index, item) {
         $(this).click(function (event) {
             event.preventDefault();
             $('html').animate({
@@ -31,6 +46,22 @@ $(document).ready(function () {
             }, 500);
         });
     });
+    $.each(f_logo, function (index, item) {
+        $(this).click(function (event) {
+            event.preventDefault();
+            $('html').animate({
+                scrollTop: menu_pos[index]
+            }, 500);
+        });
+    });
+    // $.each(footer_a, function (index, item) {
+    //     $(this).click(function (event) {
+    //         event.preventDefault();
+    //         $('html').animate({
+    //             scrollTop: menu_pos[index]
+    //         }, 500);
+    //     });
+    // });
     // c0d4f5 9ddafa 8093e8 1ca1ef 1477c6 000d49
     var mbti_1 = new ProgressBar.Circle(mbti_i, {
         strokeWidth: 6,
@@ -48,7 +79,7 @@ $(document).ready(function () {
         strokeWidth: 6,
         easing: 'easeInOut',
         duration: 1400,
-        color: '#1ca1ef',
+        color: '#8093e8',
         trailColor: '#eee',
         trailWidth: 1,
         svgStyle: null
@@ -60,7 +91,7 @@ $(document).ready(function () {
         strokeWidth: 6,
         easing: 'easeInOut',
         duration: 1400,
-        color: '#8093e8',
+        color: '#1ca1ef',
         trailColor: '#eee',
         trailWidth: 1,
         svgStyle: null
@@ -361,37 +392,34 @@ $(document).ready(function () {
     
     bar.animate(0.7);  // Number from 0.0 to 1.0
 
-    let cc_img = $('.cc-img-box div');
-    let cc_text_box = $('.cc-text-box');
-    let sw_title = $('.swiper-title')
-    $.each(sw_title, function (index, item) {
-
-        $(this).click(function (event) {
-            event.preventDefault();
-
-            // 메뉴의 포커스를 제거한다.
-            cc_img.removeClass('cc-img-active')
-            cc_img.eq(index).addClass('cc-img-active');
-
-            // 내용의 포커스를 제거한다.
-            cc_text_box.removeClass('cc-text-box-active');
-            cc_text_box.eq(index).addClass('cc-text-box-active');
-        });
-
-    });
-
-
-    var sw_cc = new Swiper('.sw-cc', {
+    var cc_img_box = new Swiper('.cc-img-box', {
         direction: 'vertical',
-        slidesPerView: 4,
+        slidesPerView: 1,
         spaceBetween: 30,
         autoplay: {
-            delay: 5000,
+            delay: 10000,
             disableOnInteraction: false,
         },
+        loop: true,
         mousewheel: true,
-    });
+        navigation: {
+            nextEl: '.next_bt',
+            prevEl: '.prev_bt',
+        },
+        on: {
+            slideChange:function () {
 
+                // 메뉴의 포커스를 제거한다.
+                // cc_img.removeClass('cc-img-active')
+                // cc_img.eq(index).addClass('cc-img-active');
+    
+                // 내용의 포커스를 제거한다.
+                $('.cc-text-box').removeClass('cc-text-box-active');
+                $('.cc-text-box').eq(this.realIndex).addClass('cc-text-box-active');
+    
+            }
+        }
+    });
 
     var words = ['Hello, I am developer Lee Junhong. I still have a lot of shortcomings, but I am a developer who has a lot of will to learn and tries hard. We will work hard every day to show you how we grow :)'
     ],

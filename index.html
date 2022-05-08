@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UACompatible" content="IE=edge">
-    <link rel="shortcut icon" type="image/x-icon" href="images/logo.png">
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo2.png">
     <link rel="apple-touch-icon-precomposed" href="images/mobile_web_icon.png">
     <meta name="viewport"
         content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
@@ -36,17 +36,18 @@
 </head>
 
 <body>
-    <div class="wrap">
+    <div class="wrap" id="home">
         <span class="bg-right">LEEJUNHONG PORTFOLIO</span>
         <header class="header">
             <div class="container clearfix">
-                <a href="#" class="logo"></a>
+                <a href="#home" class="logo"></a>
                 <div class="menu">
                     <ul class="mainmenu">
-                        <li><a href="#aboutme">ABOUT ME</a></li>
-                        <li><a href="#portfoilo">PORTFOLIO</a></li>
-                        <li><a href="#life">LIFE</a></li>
-                        <li><a href="#contact">CONTACT</a></li>
+                        <li><a href="#home"><span>HOME</span></a></li>
+                        <li><a href="#aboutme"><span>ABOUT ME</span></a></li>
+                        <li><a href="#portfoilo"><span>PORTFOLIO</span></a></li>
+                        <li><a href="#life"><span>LIFE</span></a></li>
+                        <li><a href="#contact"><span>CONTACT</span></a></li>
                     </ul>
                 </div>
             </div>
@@ -140,7 +141,7 @@
                                 위기 상황에서도 무너지지 않고 <i></i>합리적인 결정을 내리는 능력이 있습니다.<br>
                             </div>
                             <div class="ISTJ-txt-5">
-                                혼란스러움을 간결하게 만들어내는 발군의 재주가 있습니다.
+                                혼란스러움을 간결하게 만들어내는<i></i> 발군의 재주가 있습니다.
                             </div>
                         </div>
                     </div>
@@ -149,41 +150,34 @@
             <section class="clonecoding" id="portfoilo">
                 <h2 class="portfoilo-title">PORTFOLIO</h2>
                 <div class="container clearfix" data-aos="fade-up" data-aos-duration="2000">
-                    <div class="cc-swiper">
-                        <div class="swiper-container sw-cc">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <span class="swiper-title">Domino's</span>
-                                </div>
-                                <div class="swiper-slide">
-                                    <span class="swiper-title">STXconst</span>
-                                </div>
-                                <div class="swiper-slide">
-                                    <span class="swiper-title">Hansalim</span>
-                                </div>
-                                <div class="swiper-slide">
-                                    <span class="swiper-title">Pulmuone</span>
-                                </div>
-                                <div class="swiper-slide">
-                                    <span class="swiper-title">Klia</span>
-                                </div>
-                                <div class="swiper-slide">
-                                    <span class="swiper-title">Pnuh</span>
-                                </div>
-                                <div class="swiper-slide">
-                                    <span class="swiper-title">Sancheong</span>
-                                </div>
+                    <div class="swiper-container cc-img-box">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="cc-img-1 cc-img-active"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="cc-img-2"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="cc-img-3"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="cc-img-4"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="cc-img-5"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="cc-img-6"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="cc-img-7"></div>
                             </div>
                         </div>
                     </div>
-                    <div class="cc-img-box">
-                        <div class="cc-img-1 cc-img-active"></div>
-                        <div class="cc-img-2"></div>
-                        <div class="cc-img-3"></div>
-                        <div class="cc-img-4"></div>
-                        <div class="cc-img-5"></div>
-                        <div class="cc-img-6"></div>
-                        <div class="cc-img-7"></div>
+                    <div class="pagination">
+                        <button class="next_bt"></button>
+                        <button class="prev_bt"></button>
                     </div>
                     <div class="cc-right">
                         <div class="cc-text-box cc-text-box-active">
@@ -296,41 +290,53 @@
                     <h2 class="life-title">LIFE</h2>
                     <ul class="life-img">
                         <li class="img-box" >
-                            <img src="images/life1.jpg" >
-                            <div class="info">
-                                <h3>Mansion5 Cafe</h3>
+                            <div class="polaroid">
+                                <img src="images/life1.jpg" >
+                                <div class="info">
+                                    <h3>Mansion5 Cafe</h3>
+                                </div>
                             </div>
                         </li>
                         <li class="img-box">
-                            <img src="images/life2.jpg" >
-                            <div class="info">
-                                <h3>Grand Canyon</h3>
+                            <div class="polaroid">
+                                <img src="images/life2.jpg" >
+                                <div class="info">
+                                    <h3>Grand Canyon</h3>
+                                </div>
                             </div>
                         </li>
                         <li class="img-box">
-                            <img src="images/life3.jpg" >
-                            <div class="info">
-                                <h3>Nara park</h3>
+                            <div class="polaroid">
+                                <img src="images/life3.jpg" >
+                                <div class="info">
+                                    <h3>Nara park</h3>
+                                </div>
                             </div>
                         </li>
                     </ul>
                     <ul class="life-img">
                         <li class="img-box">
-                            <img src="images/life4.jpg">
-                            <div class="info">
-                                <h3>Sapporo</h3>
+                            <div class="polaroid">
+                                <img src="images/life4.jpg">
+                                <div class="info">
+                                    <h3>Sapporo</h3>
+                                </div>
                             </div>
                         </li>
                         <li class="img-box">
-                            <img src="images/life5.jpg" >
-                            <div class="info">
-                                <h3>Sapporo Biei</h3>
+                            <div class="polaroid">
+                                <img src="images/life5.jpg" >
+                                <div class="info">
+                                    <h3>Sapporo Biei</h3>
+                                </div>
                             </div>
                         </li>
                         <li class="img-box">
-                            <img src="images/life6.jpg" >
-                            <div class="info">
-                                <h3>Oxley Cafe</h3>
+                            <div class="polaroid">
+                                <img src="images/life6.jpg" >
+                                <div class="info">
+                                    <h3>Oxley Cafe</h3>
+                                </div>
                             </div>
                         </li>
                     </ul>
@@ -362,12 +368,12 @@
         </div>
         <footer class="footer">
             <a href="#" class="footer-logo"></a>
-            <ul class="footer-menu clearfix">
+            <!-- <ul class="footer-menu clearfix">
                 <li><a href="#aboutme">ABOUT ME</a></li>
                 <li><a href="#portfoilo">PORTFOLIO</a></li>
                 <li><a href="#life">LIFE</a></li>
                 <li><a href="#contact">CONTACT</a></li>
-            </ul>
+            </ul> -->
             <span class="copyright">COPYRIGHT © 2022 Bluej1996 All rights reserved.</span>
         </footer>
     </div>
