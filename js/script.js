@@ -1,4 +1,6 @@
+
 $(document).ready(function () {
+    
     AOS.init();
 
     let menu_id = ['#home','#aboutme', '#portfoilo', '#life', '#contact',];
@@ -26,7 +28,6 @@ $(document).ready(function () {
         }
     });
 
-    // let footer_a = $('.footer-menu a');
     let gnb_a = $('.mainmenu a');
     let logo = $('.logo');
     let f_logo = $('.footer-logo')
@@ -54,110 +55,14 @@ $(document).ready(function () {
             }, 500);
         });
     });
-    // $.each(footer_a, function (index, item) {
-    //     $(this).click(function (event) {
-    //         event.preventDefault();
-    //         $('html').animate({
-    //             scrollTop: menu_pos[index]
-    //         }, 500);
-    //     });
-    // });
-    // c0d4f5 9ddafa 8093e8 1ca1ef 1477c6 000d49
-    var mbti_1 = new ProgressBar.Circle(mbti_i, {
-        strokeWidth: 6,
-        easing: 'easeInOut',
-        duration: 1400,
-        color: '#000d49',
-        trailColor: '#eee',
-        trailWidth: 1,
-        svgStyle: null
-    });
     
-    mbti_1.animate(0.65);  // Number from 0.0 to 1.0
-
-    var mbti_2 = new ProgressBar.Circle(mbti_s, {
-        strokeWidth: 6,
-        easing: 'easeInOut',
-        duration: 1400,
-        color: '#8093e8',
-        trailColor: '#eee',
-        trailWidth: 1,
-        svgStyle: null
-    });
-    
-    mbti_2.animate(0.61);  // Number from 0.0 to 1.0
-
-    var mbti_3 = new ProgressBar.Circle(mbti_t, {
-        strokeWidth: 6,
-        easing: 'easeInOut',
-        duration: 1400,
-        color: '#1ca1ef',
-        trailColor: '#eee',
-        trailWidth: 1,
-        svgStyle: null
-    });
-    
-    mbti_3.animate(0.54);  // Number from 0.0 to 1.0
-
-    var mbti_4 = new ProgressBar.Circle(mbti_j, {
-        strokeWidth: 6,
-        easing: 'easeInOut',
-        duration: 1400,
-        color: '#c0d4f5',
-        trailColor: '#eee',
-        trailWidth: 1,
-        svgStyle: null
-    });
-    
-    mbti_4.animate(0.76);  // Number from 0.0 to 1.0
-
-    $('#mbti_i').waypoint(function(dir) {
-        if(dir=="down") {
-            mbti_1.animate(0.65);
-        }else{
-            mbti_1.animate(0.0);
-        }
-    }, 
-    { 
-        offset: '90%' 
-    });
-    $('#mbti_s').waypoint(function(dir) {
-        if(dir=="down") {
-            mbti_2.animate(0.61);
-        }else{
-            mbti_2.animate(0.0);
-        }
-    }, 
-    { 
-        offset: '90%' 
-    });
-    $('#mbti_t').waypoint(function(dir) {
-        if(dir=="down") {
-            mbti_3.animate(0.54);
-        }else{
-            mbti_3.animate(0.0);
-        }
-    }, 
-    { 
-        offset: '90%' 
-    });
-    $('#mbti_j').waypoint(function(dir) {
-        if(dir=="down") {
-            mbti_4.animate(0.76);
-        }else{
-            mbti_4.animate(0.0);
-        }
-    }, 
-    { 
-        offset: '90%' 
-    });
 
     var bar = new ProgressBar.Line(html, {
         strokeWidth: 4,
         easing: 'easeInOut',
         duration: 1400,
         color: '#e44f26',
-        trailColor: '#eee',
+        trailColor: '#888',
         trailWidth: 1,
         svgStyle: {width: '100%', height: '100%'},
         text: {
@@ -187,7 +92,7 @@ $(document).ready(function () {
         easing: 'easeInOut',
         duration: 1400,
         color: '#33a9dc',
-        trailColor: '#eee',
+        trailColor: '#888',
         trailWidth: 1,
         svgStyle: {width: '100%', height: '100%'},
         text: {
@@ -210,14 +115,14 @@ $(document).ready(function () {
         }
     });
     
-    bar.animate(1.0);  // Number from 0.0 to 1.0
+    bar.animate(0.95);  // Number from 0.0 to 1.0
 
     var bar = new ProgressBar.Line(js, {
         strokeWidth: 4,
         easing: 'easeInOut',
         duration: 1400,
         color: '#ffd83a',
-        trailColor: '#eee',
+        trailColor: '#888',
         trailWidth: 1,
         svgStyle: {width: '100%', height: '100%'},
         text: {
@@ -240,14 +145,14 @@ $(document).ready(function () {
         }
     });
     
-    bar.animate(0.90);  // Number from 0.0 to 1.0
+    bar.animate(0.80);  // Number from 0.0 to 1.0
 
     var bar = new ProgressBar.Line(jquery, {
         strokeWidth: 4,
         easing: 'easeInOut',
         duration: 1400,
         color: '#1572b6',
-        trailColor: '#eee',
+        trailColor: '#888',
         trailWidth: 1,
         svgStyle: {width: '100%', height: '100%'},
         text: {
@@ -270,14 +175,14 @@ $(document).ready(function () {
         }
     });
     
-    bar.animate(0.95);  // Number from 0.0 to 1.0
+    bar.animate(0.8);  // Number from 0.0 to 1.0
 
     var bar = new ProgressBar.Line(git, {
         strokeWidth: 4,
         easing: 'easeInOut',
         duration: 1400,
         color: '#000',
-        trailColor: '#eee',
+        trailColor: '#888',
         trailWidth: 1,
         svgStyle: {width: '100%', height: '100%'},
         text: {
@@ -300,14 +205,14 @@ $(document).ready(function () {
         }
     });
     
-    bar.animate(0.95);  // Number from 0.0 to 1.0
+    bar.animate(0.85);  // Number from 0.0 to 1.0
 
     var bar = new ProgressBar.Line(scss, {
         strokeWidth: 4,
         easing: 'easeInOut',
         duration: 1400,
         color: '#cd62a9',
-        trailColor: '#eee',
+        trailColor: '#888',
         trailWidth: 1,
         svgStyle: {width: '100%', height: '100%'},
         text: {
@@ -332,12 +237,12 @@ $(document).ready(function () {
     
     bar.animate(0.85);  // Number from 0.0 to 1.0
 
-    var bar = new ProgressBar.Line(bs, {
+    var bar = new ProgressBar.Line(vs, {
         strokeWidth: 4,
         easing: 'easeInOut',
         duration: 1400,
         color: '#5b4282',
-        trailColor: '#eee',
+        trailColor: '#888',
         trailWidth: 1,
         svgStyle: {width: '100%', height: '100%'},
         text: {
@@ -360,14 +265,14 @@ $(document).ready(function () {
         }
     });
     
-    bar.animate(0.85);  // Number from 0.0 to 1.0
+    bar.animate(0.75);  // Number from 0.0 to 1.0
 
     var bar = new ProgressBar.Line(vue, {
         strokeWidth: 4,
         easing: 'easeInOut',
         duration: 1400,
         color: '#2fb982',
-        trailColor: '#eee',
+        trailColor: '#888',
         trailWidth: 1,
         svgStyle: {width: '100%', height: '100%'},
         text: {
@@ -390,30 +295,22 @@ $(document).ready(function () {
         }
     });
     
-    bar.animate(0.7);  // Number from 0.0 to 1.0
+    bar.animate(0.65);  // Number from 0.0 to 1.0
 
     var cc_img_box = new Swiper('.cc-img-box', {
-        direction: 'vertical',
         slidesPerView: 1,
-        spaceBetween: 30,
+        // spaceBetween: 30,
         autoplay: {
-            delay: 10000,
+            delay: 1000000,
             disableOnInteraction: false,
         },
         loop: true,
-        mousewheel: true,
         navigation: {
             nextEl: '.next_bt',
             prevEl: '.prev_bt',
         },
         on: {
             slideChange:function () {
-
-                // 메뉴의 포커스를 제거한다.
-                // cc_img.removeClass('cc-img-active')
-                // cc_img.eq(index).addClass('cc-img-active');
-    
-                // 내용의 포커스를 제거한다.
                 $('.cc-text-box').removeClass('cc-text-box-active');
                 $('.cc-text-box').eq(this.realIndex).addClass('cc-text-box-active');
     

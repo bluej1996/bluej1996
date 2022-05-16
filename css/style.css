@@ -2,6 +2,7 @@
 @import url('notosanskr/NotoSansKR.css');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;300;400;500&display=swap');
 
 @font-face{
     font-family: "League Spartan";
@@ -34,9 +35,10 @@ html {
     
 }
 body{
-    overflow-x: hidden
+    overflow-x: hidden;
+    font-size: 1rem;
+    font-family: 'Noto Sans KR', sans-serif;
 }
-
 html {
     overflow: auto;
 }
@@ -77,11 +79,163 @@ box-shadow
     width: 1300px;
     margin: 0 auto;
 }
+.wrap {
+    position: relative;
+    display: block;
+}
+.header{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 90px;
+    z-index: 999;
+    background-color: #fff;
+    box-shadow: rgb(0 0 0 / 10%) 0px 20px 20px -20px;
+}
+.header-active {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+}
+.header .container{
+    width: 1500px;
+    height: 100%;
+}
+.logo{
+    position: absolute;
+    left: 10px;
+    top: 20px;
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: url('../images/logo2.png') no-repeat;
+    background-size: contain;
+}
+.menu{
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.mainmenu{
+    position: absolute;
+    right: 50px;
+    top: 0;
+    display: block;
+}
+.mainmenu li{
+    position: relative;
+    display: block;
+    float: left;
+    padding: 40px 20px;
+}
+.mainmenu li:hover span {
+    color: #835EA5;
+}
+.mainmenu li span{
+    position: relative;
+    font-family: 'League Spartan', arial;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+.mainmenu li span::after { 
+    content:'';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #111;
+    transition: 0.3s;
+} 
+.mainmenu>li:hover span::after {
+    transform: translateX(-50%);
+    width: 50%;
+}
+@media all and (max-width: 1500px) { 
+    .header .container{
+        width: 1300px;
+    }
+}
+@media all and (max-width: 1300px) { 
+    .header .container{
+        width: 100%;
+    } 
+    .logo{
+        display: none;
+    }
+    .mainmenu li span{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        white-space: nowrap;
+    }
+    .mainmenu{
+        position: relative;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    .mainmenu li{
+        flex: 1 1 0;
+    }
+}
+@media all and (max-width: 595px) { 
+    .header{
+        height: 50px;
+    }
+    .mainmenu li{
+        padding: 20px 10px;
+    }
+    .mainmenu li span{
+        letter-spacing: 2px;
+    }
+}
+@media all and (max-width: 450px) { 
+    .header{
+        height: 30px;
+    }
+    .mainmenu li{
+        padding: 10px 5px;
+    }
+    .mainmenu li span{
+        letter-spacing: 1px;
+    }
+}
+@media all and (max-width: 370px) { 
+    .mainmenu{
+        right: 20px;
+    }
+}
+@media all and (max-width: 320px) { 
+    .mainmenu{
+        right: 0px;
+    }
+}
+.main{
+    position: relative;
+    display: block;
+}
+.visual{
+    position: relative;
+    display: block;
+    height: 930px;
+    padding-top: 90px;
+}
+.visual .container{
+    width: 1500px;
+    height: 100%;
+}
 .bg-right{
     position: absolute;
-    left: 1590px;
-    top: 190px;
+    right: 10px;
+    top: 80px;
     display: block;
+    height: 300px;
     writing-mode: vertical-lr;
     letter-spacing: 5px;
     opacity: 0.3;
@@ -99,102 +253,6 @@ box-shadow
     -webkit-text-fill-color: transparent;
     animation: textclip 2s linear infinite;
 }
-.wrap {
-    position: relative;
-    display: block;
-}
-
-body {
-    font-size: 1rem;
-    font-family: 'Noto Sans KR', sans-serif;
-}
-
-
-.header{
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 90px;
-    z-index: 999;
-    background-color: #fff;
-    box-shadow: rgb(0 0 0 / 10%) 0px 20px 20px -20px;
-}
-.header-active {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    background-color: #fff;
-}
-
-.header .container{
-    height: 100%;
-}
-
-.logo{
-    position: absolute;
-    left: 10px;
-    top: 15px;
-    display: block;
-    width: 80px;
-    height: 80px;
-    background: url('../images/logo2.png') no-repeat;
-    background-size: contain;
-}
-.menu{
-    position: relative;
-    display: block;
-}
-.mainmenu{
-    position: absolute;
-    right: 50px;
-    top: 0;
-    display: block;
-}
-.mainmenu li{
-    position: relative;
-    display: block;
-    float: left;
-    padding: 40px 20px;
-}
-.mainmenu li:hover span {
-    color: #000d49;
-}
-.mainmenu li span{
-    position: relative;
-    font-family: 'League Spartan', arial;
-    font-weight: bold;
-    letter-spacing: 4px;
-}
-.mainmenu li span::after { 
-    content:'';
-    position: absolute;
-    bottom: -5px;
-    left: 50%;
-    display: block;
-    width: 0;
-    height: 2px;
-    background: #111;
-    transform: translateX(-50%);
-    transition: 0.3s;
-} 
-.mainmenu>li:hover span::after {
-    transform: translateX(-50%);
-    width: 50%;
-}
-
-.main{
-    position: relative;
-    display: block;
-}
-.visual{
-    position: relative;
-    display: block;
-    height: 930px;
-}
-.visual .container{
-    height: 100%;
-}
 .waviy {
     position: relative;
     -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
@@ -207,8 +265,8 @@ body {
     font-family: 'League Spartan', arial;
     padding-top: 330px;
     letter-spacing: -3px;
-    color: #4169e1;
-    font-size: 10px;
+    color: #835EA5;
+    font-size: 15px;
     opacity: .3;
     animation: waviy 1.5s infinite;
     animation-delay: calc(.1s * var(--i));
@@ -228,13 +286,14 @@ body {
     font-family: 'League Spartan', arial;
     font-weight: bold;
     font-size: 82px;
+    margin-bottom: 30px;
 }
 .word{
     position: relative;
     display: block;
     font-family: 'League Spartan', arial;
     font-weight: bold;
-    font-size: 11px;
+    font-size: 13px;
     line-height: 20px;
     color: #8f8f8f;
     display: block;
@@ -251,6 +310,129 @@ body {
     background-size: cover;
     box-shadow: -10px 10px 30px rgb(150, 150, 150);
 }
+@media all and (max-width: 1550px) { 
+    .waviy,
+    .visual h1,
+    .word{
+        margin-left: 4%;
+    }
+    .visual{
+        height: 65vw;
+    }
+    .visual .container{
+        width: 100%;
+    }
+    .visual-img{
+        width: 62vw;
+        height: 39vw;
+    }
+}
+@media all and (max-width: 1400px) { 
+    .waviy,
+    .visual h1,
+    .word{
+        margin-left: 4%;
+    }
+    .visual h1{
+        font-size: 76px;
+    }
+    .waviy span{
+        padding-top: 280px;
+    }
+}
+@media all and (max-width: 1300px) {
+    .visual h1{
+        font-size: 70px;
+    }
+    .waviy span{
+        padding-top: 260px;
+    }
+}
+@media all and (max-width: 1200px) {
+    .visual h1{
+        font-size: 64px;
+    }
+    .waviy span{
+        padding-top: 250px;
+    }
+}
+@media all and (max-width: 1100px) { 
+    .visual h1{
+        font-size: 58px;
+    }
+    .waviy span{
+        padding-top: 220px;
+    }
+}
+@media all and (max-width: 1000px) { 
+    .visual h1{
+        font-size: 52px;
+    }
+    .waviy span{
+        padding-top: 200px;
+    }
+}
+@media all and (max-width: 900px) { 
+    .visual h1{
+        font-size: 46px;
+    }
+    .waviy span{
+        padding-top: 180px;
+    }
+    .bg-right{
+        font-size: 10px;
+    }
+}
+@media all and (max-width: 800px) { 
+    .waviy,
+    .visual h1,
+    .word{
+        margin-left: 13%;
+    }
+    .visual-img{
+        width: 85vw;
+        height: 50vw;
+    }
+    .visual h1{
+        color: #fff;
+        font-size: 45px;
+    }
+    .waviy span{
+        padding-top: 200px;
+    }
+    .bg-right{
+        font-size: 10px;
+    }
+    .waviy span {
+        font-size: 0;
+    }
+    .word {
+        color: rgb(194, 194, 194);
+        font-size: 10px;
+    }
+}
+@media all and (max-width: 650px) { 
+    .visual h1{
+        font-size: 40px;
+    }
+    .waviy span{
+        padding-top: 150px;
+    }
+    .bg-right{
+        font-size: 10px;
+    }
+}
+@media all and (max-width: 550px) { 
+    .visual h1{
+        font-size: 35px;
+    }
+    .waviy span{
+        padding-top: 150px;
+    }
+    .word {
+        line-height: 15px;
+    }
+}
 .blank{
     position: relative;
     display: block;
@@ -262,105 +444,40 @@ body {
     display: block;
     width: 3px;
     height: 100px;
-    background-color: #4169e17e;
+    background-color: #e8d6ff
 }
 .aboutme{
     position: relative;
     display: block;
-    height: 1000px;
+    height: 1200px;
 }
 .aboutme > .container{
     height: 100%;
     padding-top: 300px;
     width: 1400px;
 }
-.aboutme-top{
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 400px;
-}
-.mbti-1{
+.aboutme-left{
     position: relative;
     display: block;
     width: 700px;
-    height: 400px;
-    justify-content: space-evenly;
-    box-shadow: 0px 0px 30px rgb(200, 200, 200);
-    border: 4px solid transparent;
-    background-image: linear-gradient(#fff, #fff),
-    linear-gradient(to right, #c0d4f5, #9ddafa, #8093e8,#1ca1ef);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-    border-radius: 20px 0 0 0;
-    background-color: #000;
-}
-.mbti-1 span{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 5em;
-}
-.mbti_i{
-    position: absolute;
-    left: 70px;
-    top: 50px;
-    display: block;
-    width: 150px;
-    height: 150px;
-}
-.mbti_s{
-    position: absolute;
-    left: 180px;
-    top: 210px;
-    display: block;
-    width: 140px;
-    height: 140px;
-}
-.mbti_t{
-    position: absolute;
-    left: 300px;
-    top: 80px;
-    display: block;
-    width: 120px;
-    height: 120px;
-}
-.mbti_j{
-    position: absolute;
-    left: 420px;
-    top: 180px;
-    display: block;
-    width: 160px;
-    height: 160px;
+    height: 700px;
+    float: left;
 }
 .education{
-    position: absolute;
-    right: 0;
-    top: 0;
+    position: relative;
     display: block;
-    width: 674px;
+    width: 600px;
     height: 245px;
-    justify-content: space-evenly;
-    box-shadow: 0px 0px 30px rgb(200, 200, 200);
-    border: 4px solid transparent;
-    background-image: linear-gradient(#fff, #fff),
-    linear-gradient(to right, #1ca1ef, #1477c6, #000d49);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-    border-radius: 0 0px 0px 0;
-    background-color: #000;
 }
 .education > span{
     position: relative;
-    left: 30px;
-    top: 30px;
     display: block;
 
     letter-spacing: 4px;
     font-family: 'League Spartan', arial;
     color: #444;
     font-size: 20px;
+    margin-bottom: 20px;
 }
 .education > span::before{
     content: '';
@@ -370,13 +487,11 @@ body {
     display: block;
     width: 150px;
     height: 17px;
-    background-color: #9ddafa;
+    background-color: #a688cd;
     z-index: -1;
 }
-.education p{
-    position: absolute;
-    left: 30px;
-    top: 80px;
+.aboutme p{
+    position: relative;
     display: block;
 
     font-size: 15px;
@@ -385,32 +500,123 @@ body {
     line-height: 27px;
     color: #000;
 }
-.aboutme-bottom{
+.mbti-text{
     position: relative;
     display: block;
-    width: 100%;
-    height: 400px;
-    margin-top: -150px;
+    width: 700px;
+    height: 245px;
 }
-.skill{
-    position: absolute;
-    right: 0;
-    top: 0;
+.mbti-text > span{
+    position: relative;
     display: block;
-    width: 780px;
-    height: 400px;
-    box-shadow: 0px 0px 30px rgb(200, 200, 200);
-    border: 4px solid transparent;
-    background-image: linear-gradient(#fff, #fff),
-    linear-gradient(to right, #1ca1ef, #1477c6, #000d49);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-    border-radius: 20px 0px 20px 0;
+
+    margin-bottom: 20px;
+    letter-spacing: 4px;
+    font-family: 'League Spartan', arial;
+    color: #444;
+    font-size: 20px;
 }
-.skill-title{
+
+.mbti-text > span::before{
+    content: '';
+    position: absolute;
+    left: 8px;
+    top: 35%;
+    display: block;
+    width: 150px;
+    height: 17px;
+    background-color: #a688cd;
+    z-index: -1;
+}
+
+.ISTJ-txt-1,
+.ISTJ-txt-2,
+.ISTJ-txt-3,
+.ISTJ-txt-4,
+.ISTJ-txt-5{
+    position: relative;
+    display: block;
+
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family: 'Noto Sans KR';
+    line-height: 27px;
+    color: #000;
+}
+.ISTJ-txt-1 > i{
+    content: '';
+    position: absolute;
+    left: 45px;
+    top: 15px;
+    display: block;
+    width: 150px;
+    height: 10px;
+    background-color: #e8d6ff;
+    z-index: -1;
+}
+.ISTJ-txt-2 > i{
+    content: '';
     position: absolute;
     left: 30px;
-    top: 30px;
+    top: 15px;
+    display: block;
+    width: 190px;
+    height: 10px;
+    background-color: #e8d6ff;
+    z-index: -1;
+}
+.ISTJ-txt-3 > i{
+    content: '';
+    position: absolute;
+    left: 165px;
+    top: 15px;
+    display: block;
+    width: 45px;
+    height: 10px;
+    background-color: #e8d6ff;
+    z-index: -1;
+}
+.ISTJ-txt-4 > i{
+    content: '';
+    position: absolute;
+    left: 197px;
+    top: 15px;
+    display: block;
+    width: 186px;
+    height: 10px;
+    background-color: #e8d6ff;
+    z-index: -1;
+}
+.ISTJ-txt-5 > i{
+    content: '';
+    position: absolute;
+    left: 219px;
+    top: 15px;
+    display: block;
+    width: 79px;
+    height: 10px;
+    background-color: #e8d6ff;
+    z-index: -1;
+}
+.ISTJ-txt span::before{
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    display: block;
+    width: 30px;
+    height: 10px;
+    background-color: #a688cd;
+    z-index: -1;
+}
+.skill{
+    position: relative;
+    display: block;
+    width: 700px;
+    height: 400px;
+}
+.skill-title{
+    position: relative;
     display: block;
     font-family: 'League Spartan', arial;
     letter-spacing: 4px;
@@ -426,21 +632,22 @@ body {
     display: block;
     width: 80px;
     height: 19px;
-    background-color: #9ddafa;
+    background-color: #a688cd;
     z-index: -1;
 }
 .skill .container{
     display: flex;
     flex-wrap: wrap;
     align-content: stretch;
-    width: 650px;
-    height: 280px;
-    margin-top: 90px;
+    width: 600px;
+    height: 400px;
+    padding-top: 50px;
+    margin: 0;
 }
 .skill .container .item{
     flex: 1 1 25%;
 }
-#html,#css,#js,#jquery,#git,#scss,#bs,#vue{
+#html,#css,#js,#jquery,#git,#scss,#vs,#vue{
     margin-top: 105px;
     margin-left: 30px;
     width: 100px;
@@ -503,178 +710,121 @@ body {
     background: url('../images/skills_8.png') no-repeat center;
     background-size: contain;
 }
-.mbti-text{
-    position: absolute;
-    left: 0;
-    bottom: 0;
+
+.aboutme-right{
+    position: relative;
     display: block;
-    width: 595px;
-    height: 245px;
-    justify-content: space-evenly;
-    box-shadow: 0px 0px 30px rgb(200, 200, 200);
-    border: 4px solid transparent;
-    background-image: linear-gradient(#fff, #fff),
-    linear-gradient(to right, #c0d4f5, #9ddafa, #8093e8, #1ca1ef);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-    border-radius: 0px 0px 20px 0px;
-    background-color: #000;
+    width: 700px;
+    height: 700px;
+    float: right;
 }
-.mbti-text > span{
-    position: absolute;
-    left: 30px;
-    top: 30px;
+
+.icandoit-text{
+    position: relative;
     display: block;
+    width: 700px;
+}
+
+.icandoit-txt-1,
+.icandoit-txt-2,
+.icandoit-txt-3,
+.icandoit-txt-4,
+.icandoit-txt-5,
+.icandoit-txt-6{
+    height: 140px;
+}
+.icandoit-txt-1 > span,
+.icandoit-txt-2 > span,
+.icandoit-txt-3 > span,
+.icandoit-txt-4 > span,
+.icandoit-txt-5 > span,
+.icandoit-txt-6 > span{
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
 
     letter-spacing: 4px;
     font-family: 'League Spartan', arial;
     color: #444;
     font-size: 20px;
 }
-
-.mbti-text > span::before{
+.icandoit-txt-1 > span::before{
     content: '';
     position: absolute;
     left: 8px;
-    top: 35%;
+    top: 8px;
     display: block;
-    width: 150px;
+    width: 65px;
     height: 17px;
-    background-color: #9ddafa;
+    background-color: #a688cd;
     z-index: -1;
 }
-.ISTJ-txt-1{
-    position: absolute;
-    left: 30px;
-    top: 80px;
-    display: block;
-
-    font-size: 14px;
-    letter-spacing: 1px;
-    font-family: 'Noto Sans KR';
-    line-height: 27px;
-    color: #000;
-}
-.ISTJ-txt-1 > i{
+.icandoit-txt-2 > span::before{
     content: '';
     position: absolute;
-    left: 45px;
-    top: 15px;
+    left: 8px;
+    top: 8px;
     display: block;
-    width: 150px;
-    height: 10px;
-    background-color: #c0d4f5;
+    width: 65px;
+    height: 17px;
+    background-color: #a688cd;
     z-index: -1;
 }
-.ISTJ-txt-2{
-    position: absolute;
-    left: 30px;
-    top: 107px;
-    display: block;
-
-    font-size: 14px;
-    letter-spacing: 1px;
-    font-family: 'Noto Sans KR';
-    line-height: 27px;
-    color: #000;
-}
-.ISTJ-txt-2 > i{
+.icandoit-txt-3 > span::before{
     content: '';
     position: absolute;
-    left: 30px;
-    top: 15px;
+    left: 8px;
+    top: 8px;
     display: block;
-    width: 190px;
-    height: 10px;
-    background-color: #c0d4f5;
+    width: 135px;
+    height: 17px;
+    background-color: #a688cd;
     z-index: -1;
 }
-.ISTJ-txt-3{
-    position: absolute;
-    left: 30px;
-    top: 134px;
-    display: block;
-
-    font-size: 14px;
-    letter-spacing: 1px;
-    font-family: 'Noto Sans KR';
-    line-height: 27px;
-    color: #000;
-}
-.ISTJ-txt-3 > i{
+.icandoit-txt-4 > span::before{
     content: '';
     position: absolute;
-    left: 165px;
-    top: 15px;
+    left: 8px;
+    top: 8px;
     display: block;
     width: 45px;
-    height: 10px;
-    background-color: #c0d4f5;
+    height: 17px;
+    background-color: #a688cd;
     z-index: -1;
 }
-.ISTJ-txt-4{
-    position: absolute;
-    left: 30px;
-    top: 161px;
-    display: block;
-
-    font-size: 14px;
-    letter-spacing: 1px;
-    font-family: 'Noto Sans KR';
-    line-height: 27px;
-    color: #000;
-}
-.ISTJ-txt-4 > i{
+.icandoit-txt-5 > span::before{
     content: '';
     position: absolute;
-    left: 197px;
-    top: 15px;
+    left: 8px;
+    top: 8px;
     display: block;
-    width: 186px;
-    height: 10px;
-    background-color: #c0d4f5;
+    width: 35px;
+    height: 17px;
+    background-color: #a688cd;
     z-index: -1;
 }
-.ISTJ-txt-5{
-    position: absolute;
-    left: 30px;
-    top: 188px;
-    display: block;
-
-    font-size: 14px;
-    letter-spacing: 1px;
-    font-family: 'Noto Sans KR';
-    line-height: 27px;
-    color: #000;
-}
-.ISTJ-txt-5 > i{
+.icandoit-txt-6 > span::before{
     content: '';
     position: absolute;
-    left: 219px;
-    top: 15px;
+    left: 8px;
+    top: 8px;
     display: block;
-    width: 79px;
-    height: 10px;
-    background-color: #c0d4f5;
+    width: 115px;
+    height: 17px;
+    background-color: #a688cd;
     z-index: -1;
 }
-.ISTJ-txt span::before{
-    content: '';
-    position: absolute;
-    left: 0px;
-    top: 10px;
-    display: block;
-    width: 30px;
-    height: 10px;
-    background-color: #9ddafa;
-    z-index: -1;
+@media all and (max-width: 1500px) { 
 }
 .clonecoding{
     position: relative;
     display: block;   
     width: 100%;
-    height: 1200px;
+    height: 1400px;
     padding-top: 250px;
+}
+.clonecoding .container{
+    width: 1400px;
 }
 .portfoilo-title{
     position: relative;
@@ -687,28 +837,27 @@ body {
     text-align: center;
     margin-bottom: 150px;
 }
-.clonecoding .container{
-    width: 100%;
-}
-.cc-swiper{
+.mockup{
     position: relative;
-    display: block;
-    width: 20%;
-    float: left;
+    width: 800px;
+    z-index: 1;
 }
 .cc-img-box{
     position: absolute;
-    left: 30%;
+    left: 0;
     top: 0px;
-    transform: translateX(-50%);
     display: block;
-    width: 800px;
-    height: 500px;
-    float: left;
-    border: 4px solid #000;
-    border-radius: 30px 0 0 0;
+    width: 760px;
+    height: 425px;
     overflow: hidden;
-    margin-left: 100px;
+    margin: 20px 20px 0 20px;
+    /* border: 4px solid #000; */
+    /* border-radius: 30px 0 0 0; */
+}
+.swiper-wrapper{
+    z-index: -1;
+}
+.swiper-slide{
 }
 .cc-img-1,
 .cc-img-2,
@@ -716,7 +865,8 @@ body {
 .cc-img-4,
 .cc-img-5,
 .cc-img-6,
-.cc-img-7{
+.cc-img-7,
+.cc-img-8{
     position: relative;
     display: block;
     width: 100%;
@@ -750,84 +900,44 @@ body {
     background: url('../images/sancheong.png') no-repeat center;
     background-size: cover;
 }
+.cc-img-8{
+    background: url('../images/todophp.png') no-repeat center;
+    background-size: cover;
+}
 .prev_bt{
     position: absolute;
-    left: 35%;
-    top: -60px;
+    right: 55px;
+    top: 0;
     display: block;
     width: 50px;
     height: 50px;
-    background: url('../images/arrow.png')no-repeat center;
+    background: url('../images/next.png')no-repeat center;
     background-size: cover;
-    border: 0;
-    transform: rotate(90deg);
+    border: 3px solid #000;
+    transform: rotate(180deg);
     cursor: pointer;
+    z-index: 2;
 }
 .next_bt{
     position: absolute;
-    left: 35%;
-    top: 510px;
+    right: 0;
+    top: 0px;
     display: block;
     width: 50px;
     height: 50px;
-    background: url('../images/arrow.png')no-repeat center;
+    background: url('../images/next.png')no-repeat center;
     background-size: cover;
-    border: 50px;
-    transform: rotate(270deg);
+    border: 3px solid #000;
     cursor: pointer;
+    z-index: 2;
 }
 .cc-right{
     position: absolute;
-    right: 15%;
+    right: 0;
     top: 0;
     display: block;
-    margin-left: 100px;
-    margin-top: 20px;
+    margin-top: 50px;
 }
-.portfoilo-img-1,
-.portfoilo-img-2,
-.portfoilo-img-3,
-.portfoilo-img-4,
-.portfoilo-img-5,
-.portfoilo-img-6,
-.portfoilo-img-7{
-    content: '';
-    position: absolute;
-    left: 70%;
-    top: 0;
-    transform: translateX(-50%);
-    display: block;
-    width: 350px;
-    height: 350px;
-}
-/* .portfoilo-img-1{
-    background: url('../images/domino_title.png') no-repeat center;
-    background-size: contain;
-}
-.portfoilo-img-2{
-    background: url('../images/STX_title.png') no-repeat center;
-    background-size: contain;
-}
-.portfoilo-img-3{
-    background: url('../images/Hansalim_title.png') no-repeat center;
-    background-size: contain;
-}
-.portfoilo-img-4{
-    background: url('../images/pulmuone_title.png') no-repeat center;
-    background-size: contain;
-}
-.portfoilo-img-5{
-    background: url('../images/그림1.png') no-repeat center;
-    background-size: contain;
-}
-.portfoilo-img-6{
-    background: url('../images/pnuh_title.png') no-repeat center;
-    background-size: contain;
-}
-.portfoilo-img-7{
-    background: url('../images/sancheong_title.png') no-repeat center;
-    background-size: contain;
-} */
 
 .cc-text-box{
     position: relative;
@@ -836,14 +946,35 @@ body {
 .cc-text-box-active{
     display: block;
 }
+.cc-text-box h2{
+    position: relative;
+    display: block;
+    font-size: 60px;
+    line-height: 50px;
+    font-weight: 500;
+    padding-bottom: 50px;
+    font-family: "IBM Plex Sans KR", sans-serif;
+}
+.cc-text{
+    position: relative;
+    display: flex;
+}
+.cc-text li{
+    flex: 1
+}
 .cc-text-box span{
+    position: relative;
+    display: block;
     font-size: 18px;
     letter-spacing: 1px;
     font-family: 'Noto Sans KR';
     line-height: 34px;
-    color: #000d49;
+    color: #835EA5;
     font-weight: 600;
-    margin-bottom: 20px;
+}
+.cc-number{
+    position: absolute !important;
+    bottom: 100%;
 }
 .cc-text-box h3{
     font-size: 24px;
@@ -853,6 +984,46 @@ body {
     color: #000;
     font-weight: 300;
     margin-bottom: 30px;
+}
+.cc-skill-1{
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url('../images/skills_1.png') no-repeat;
+    background-size: contain;   
+}
+.cc-skill-2{
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url('../images/skills_2.png') no-repeat;
+    background-size: contain;
+}
+.cc-skill-3{
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url('../images/skills_3.png') no-repeat;
+    background-size: contain;
+}
+.cc-skill-4{
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url('../images/skills_4.png') no-repeat;
+    background-size: contain;
+}
+.cc-skill-5{
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url('../images/skills_8.png') no-repeat;
+    background-size: contain;
 }
 .cc-link {
     position: relative;
@@ -871,15 +1042,11 @@ body {
     margin: 20px 10px 0px 0px;
     float: left;
 }
-.cc-text-box a:nth-child(2){
-    background-color: #000d49;
-}
 .cc-link:hover {
-    background-color: #000d49;
+    background-color: #835EA5;
     border: 1px solid #fff;
     color: #fff;
 }
-
 
 /* .vue{
     position: relative;
@@ -1001,7 +1168,6 @@ body {
     box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.3);
 }
 .img-box:hover {
-    filter: grayscale(100%);
     transform: scale(1, 1) rotate(0deg) !important;
     transition: all 0.35s;
 }
@@ -1049,8 +1215,6 @@ body {
 .img-box:hover .info {
     opacity: 1;
 }
-
-
 .contact{
     position: relative;
     display: block;
@@ -1077,13 +1241,15 @@ body {
     font-size: 62px;
     text-align: right;
     color: #000;
-    margin-right: 110px;
+    margin-right: 100px;
 }
 .contact-img{
     position: relative;
     display: block;
-    width: 850px;
+    width: 100%;
     height: 500px;
+    float: right;
+    margin-right: 100px;
     background: url('../images/contact_img.jpg') no-repeat center;
     background-size: cover;
 }
@@ -1100,10 +1266,10 @@ body {
     top: -50px;
     display: block;
     font-family: 'League Spartan', arial;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     line-height: 50px;
     font-size: 12px;
-    color: #999;
+    color: #222;
     opacity: .5;
 }
 .contact-box{
@@ -1145,7 +1311,8 @@ body {
 .contact-box p{
     line-height: 50px;
     font-family: 'League Spartan', arial;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
+    font-size: 15px;
     color: #444;
     margin-left: 30px;
 }
