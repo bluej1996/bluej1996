@@ -724,14 +724,18 @@ box-shadow
     display: block;
     width: 700px;
 }
-
+.icandoit-text b{
+    font-weight: bold;
+}
 .icandoit-txt-1,
 .icandoit-txt-2,
-.icandoit-txt-3,
+.icandoit-txt-3{
+    height: 170px;
+}
 .icandoit-txt-4,
 .icandoit-txt-5,
 .icandoit-txt-6{
-    height: 140px;
+    height: 130px;
 }
 .icandoit-txt-1 > span,
 .icandoit-txt-2 > span,
@@ -756,7 +760,7 @@ box-shadow
     display: block;
     width: 65px;
     height: 17px;
-    background-color: #a688cd;
+    background-color: #e44f26;
     z-index: -1;
 }
 .icandoit-txt-2 > span::before{
@@ -767,7 +771,7 @@ box-shadow
     display: block;
     width: 65px;
     height: 17px;
-    background-color: #a688cd;
+    background-color: #33a9dc;
     z-index: -1;
 }
 .icandoit-txt-3 > span::before{
@@ -778,7 +782,7 @@ box-shadow
     display: block;
     width: 135px;
     height: 17px;
-    background-color: #a688cd;
+    background-color: #ffd83a;
     z-index: -1;
 }
 .icandoit-txt-4 > span::before{
@@ -789,7 +793,7 @@ box-shadow
     display: block;
     width: 45px;
     height: 17px;
-    background-color: #a688cd;
+    background-color: #39e19e;
     z-index: -1;
 }
 .icandoit-txt-5 > span::before{
@@ -800,7 +804,7 @@ box-shadow
     display: block;
     width: 35px;
     height: 17px;
-    background-color: #a688cd;
+    background-color: #999;
     z-index: -1;
 }
 .icandoit-txt-6 > span::before{
@@ -1048,34 +1052,6 @@ box-shadow
     color: #fff;
 }
 
-/* .vue{
-    position: relative;
-    display: block;
-    height: 1200px;
-    padding: 100px 0;
-    background: #f5f5f5;
-
-}
-.vue > span{
-    position: relative;
-    display: block;
-    font-family: 'League Spartan', arial;
-    letter-spacing: 4px;
-    line-height: 62px;
-    color: #4169e1;
-    text-align: center;
-}
-.vue-title{
-    position: relative;
-    display: block;
-    font-family: 'League Spartan', arial;
-    letter-spacing: 4px;
-    line-height: 100px;
-    font-size: 62px;
-    text-align: center;
-    margin-bottom: 100px;
-    color: #000;
-} */
 .life{
     position: relative;
     display: block;
