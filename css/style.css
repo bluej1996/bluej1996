@@ -802,9 +802,9 @@ box-shadow
     left: 8px;
     top: 8px;
     display: block;
-    width: 35px;
+    width: 115px;
     height: 17px;
-    background-color: #999;
+    background-color: #d8a36e;
     z-index: -1;
 }
 .icandoit-txt-6 > span::before{
@@ -813,9 +813,9 @@ box-shadow
     left: 8px;
     top: 8px;
     display: block;
-    width: 115px;
+    width: 35px;
     height: 17px;
-    background-color: #a688cd;
+    background-color: #999;
     z-index: -1;
 }
 @media all and (max-width: 1500px) { 
