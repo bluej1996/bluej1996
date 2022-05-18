@@ -249,7 +249,6 @@ box-shadow
         #ff00ff 67%,
         #ff1361 100%
     );
-    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: textclip 2s linear infinite;
 }
@@ -861,8 +860,6 @@ box-shadow
 .swiper-wrapper{
     z-index: -1;
 }
-.swiper-slide{
-}
 .cc-img-1,
 .cc-img-2,
 .cc-img-3,
@@ -1060,9 +1057,6 @@ box-shadow
     background: url('../images/bg.png') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
-}
-.life .container{
-    
 }
 .life-title{
     position: relative;
