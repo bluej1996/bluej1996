@@ -43,21 +43,10 @@ html {
     overflow: auto;
 }
 
-box-shadow
-/* SCROLL */
 ::-webkit-scrollbar {
     width: 0px;
 }
 
-/* 스크롤바의 width */
-::-webkit-scrollbar-track {
-    background-color: #000;
-}
-
-/* 스크롤바의 전체 배경색 */
-::-webkit-scrollbar-thumb {
-    background: linear-gradient(to top, #babcfe, #4169e1);
-}
 
 /* 스크롤바 색 */
 ::-webkit-scrollbar-button {
@@ -249,6 +238,7 @@ box-shadow
         #ff00ff 67%,
         #ff1361 100%
     );
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: textclip 2s linear infinite;
 }

@@ -1,6 +1,5 @@
+window.onload = function(){
 
-$(document).ready(function () {
-    
     AOS.init();
 
     let menu_id = ['#home','#aboutme', '#portfoilo', '#life', '#contact',];
@@ -365,4 +364,4 @@ $(document).ready(function () {
     $(document).ready(function () {
     wordflick();
     });
-});
+} 
