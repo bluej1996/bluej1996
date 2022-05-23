@@ -59,7 +59,7 @@ window.onload = function(){
     var bar = new ProgressBar.Line(html, {
         strokeWidth: 4,
         easing: 'easeInOut',
-        duration: 1400,
+        duration: 3000,
         color: '#e44f26',
         trailColor: '#888',
         trailWidth: 1,
@@ -89,7 +89,7 @@ window.onload = function(){
     var bar = new ProgressBar.Line(css, {
         strokeWidth: 4,
         easing: 'easeInOut',
-        duration: 1400,
+        duration: 3000,
         color: '#33a9dc',
         trailColor: '#888',
         trailWidth: 1,
@@ -119,7 +119,7 @@ window.onload = function(){
     var bar = new ProgressBar.Line(js, {
         strokeWidth: 4,
         easing: 'easeInOut',
-        duration: 1400,
+        duration: 3000,
         color: '#ffd83a',
         trailColor: '#888',
         trailWidth: 1,
@@ -149,7 +149,7 @@ window.onload = function(){
     var bar = new ProgressBar.Line(jquery, {
         strokeWidth: 4,
         easing: 'easeInOut',
-        duration: 1400,
+        duration: 3000,
         color: '#1572b6',
         trailColor: '#888',
         trailWidth: 1,
@@ -179,7 +179,7 @@ window.onload = function(){
     var bar = new ProgressBar.Line(git, {
         strokeWidth: 4,
         easing: 'easeInOut',
-        duration: 1400,
+        duration: 3000,
         color: '#000',
         trailColor: '#888',
         trailWidth: 1,
@@ -209,7 +209,7 @@ window.onload = function(){
     var bar = new ProgressBar.Line(scss, {
         strokeWidth: 4,
         easing: 'easeInOut',
-        duration: 1400,
+        duration: 3000,
         color: '#cd62a9',
         trailColor: '#888',
         trailWidth: 1,
@@ -239,7 +239,7 @@ window.onload = function(){
     var bar = new ProgressBar.Line(vs, {
         strokeWidth: 4,
         easing: 'easeInOut',
-        duration: 1400,
+        duration: 3000,
         color: '#5b4282',
         trailColor: '#888',
         trailWidth: 1,
@@ -269,7 +269,7 @@ window.onload = function(){
     var bar = new ProgressBar.Line(vue, {
         strokeWidth: 4,
         easing: 'easeInOut',
-        duration: 1400,
+        duration: 3000,
         color: '#2fb982',
         trailColor: '#888',
         trailWidth: 1,
